@@ -1,0 +1,47 @@
+[
+  {
+    "shift_id": "SHIFT-DAY-01",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "name": "Morning Civil & Casting Shift",
+    "shift_type": "DAY_SHIFT",
+    "start_time_local": "07:00",
+    "end_time_local": "15:30",
+    "peak_sun_overlap": true,
+    "workload_intensity": "HEAVY",
+    "worker_count": 24,
+    "supervisor_user_id": "usr_sup_rahul",
+    "status": "ACTIVE",
+    "created_at_utc": "2026-10-01T04:00:00Z",
+    "updated_at_utc": "2026-10-07T06:00:00Z"
+  },
+  {
+    "shift_id": "SHIFT-AFT-02",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "name": "Afternoon Assembly & Logistics Shift",
+    "shift_type": "AFTERNOON_SHIFT",
+    "start_time_local": "15:30",
+    "end_time_local": "23:30",
+    "peak_sun_overlap": false,
+    "workload_intensity": "MODERATE",
+    "worker_count": 15,
+    "supervisor_user_id": "usr_sup_rahul",
+    "status": "SCHEDULED",
+    "created_at_utc": "2026-10-01T04:00:00Z",
+    "updated_at_utc": "2026-10-07T06:00:00Z"
+  },
+  {
+    "shift_id": "SHIFT-SOUTH-01",
+    "worksite_id": "WS-BLR-SOUTH-02",
+    "name": "Day Facade Installation Shift",
+    "shift_type": "DAY_SHIFT",
+    "start_time_local": "08:00",
+    "end_time_local": "16:30",
+    "peak_sun_overlap": true,
+    "workload_intensity": "MODERATE",
+    "worker_count": 12,
+    "supervisor_user_id": "usr_sup_kiran",
+    "status": "ACTIVE",
+    "created_at_utc": "2026-10-01T04:00:00Z",
+    "updated_at_utc": "2026-10-07T06:00:00Z"
+  }
+]

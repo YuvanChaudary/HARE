@@ -1,0 +1,178 @@
+<mxfile host="app.diagrams.net" modified="2026-10-11T12:30:00.000Z" agent="Antigravity" version="24.7.17">
+  <diagram id="hare-architecture" name="HARE End-to-End System Architecture">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- TITLE BLOCK -->
+        <mxCell id="title" value="Heat Action Response Engine (HARE) — End-to-End System Architecture&#xa;From heat warning to verified workplace action | AWS Account: 293951764497 | Region: ap-southeast-2 (Sydney)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;fontColor=#0f172a;" vertex="1" parent="1">
+          <mxGeometry x="250" y="20" width="1300" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- SWIMLANE 1: CLIENT PRESENTATION -->
+        <mxCell id="lane1" value="1. CLIENT PRESENTATION LAYER" style="swimlane;html=1;startSize=30;horizontal=1;fillColor=#e0f2fe;strokeColor=#0284c7;fontStyle=1;fontSize=13;fontColor=#0369a1;rounded=1;arcSize=4;" vertex="1" parent="1">
+          <mxGeometry x="40" y="90" width="1720" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="user_sup" value="👷 Site Supervisor&#xa;Rahul Kumar&#xa;(WS-BLR-NORTH-04)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#0284c7;fontStyle=1;fontSize=11;" vertex="1" parent="lane1">
+          <mxGeometry x="40" y="45" width="160" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="user_mgr" value="🦺 Regional Safety Mgr&#xa;Ananya Rao&#xa;(Multi-Site Regional Scope)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#0284c7;fontStyle=1;fontSize=11;" vertex="1" parent="lane1">
+          <mxGeometry x="240" y="45" width="180" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="user_adm" value="⚙️ System Admin&#xa;Vikram Singh&#xa;(Enterprise &amp; Compliance)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#0284c7;fontStyle=1;fontSize=11;" vertex="1" parent="lane1">
+          <mxGeometry x="460" y="45" width="170" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_app" value="🪣 Amazon S3 Static SPA Hosting&#xa;React 18 + TypeScript + Vite&#xa;hare-app-293951764497-sydney" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dbeafe;strokeColor=#2563eb;fontStyle=1;fontSize=12;fontColor=#1e3a8a;" vertex="1" parent="lane1">
+          <mxGeometry x="720" y="45" width="280" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="ec2_edge" value="💻 Amazon EC2 Edge Worker Node&#xa;i-0c6453f7986631915 (t3.micro AL2023)&#xa;IP: 3.106.130.183 | IoT Relay" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffedd5;strokeColor=#ea580c;fontStyle=1;fontSize=11;fontColor=#9a3412;" vertex="1" parent="lane1">
+          <mxGeometry x="1100" y="45" width="280" height="65" as="geometry" />
+        </mxCell>
+
+        <!-- SWIMLANE 2: API INGRESS -->
+        <mxCell id="lane2" value="2. API INGRESS &amp; ROUTING LAYER" style="swimlane;html=1;startSize=30;horizontal=1;fillColor=#ede9fe;strokeColor=#7c3aed;fontStyle=1;fontSize=13;fontColor=#6d28d9;rounded=1;arcSize=4;" vertex="1" parent="1">
+          <mxGeometry x="40" y="240" width="1720" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="apigw" value="⚡ Amazon API Gateway (HTTP API v2)&#xa;Endpoint: 5k8d4lhgc6.execute-api.ap-southeast-2.amazonaws.com&#xa;HTTPS Proxy | Strict CORS | JWT Bearer Authentication" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#7c3aed;fontStyle=1;fontSize=12;fontColor=#4c1d95;" vertex="1" parent="lane2">
+          <mxGeometry x="550" y="40" width="620" height="55" as="geometry" />
+        </mxCell>
+
+        <!-- SWIMLANE 3: SERVERLESS COMPUTE & ENGINES -->
+        <mxCell id="lane3" value="3. SERVERLESS CORE BACKEND COMPUTE LAYER (AWS Lambda)" style="swimlane;html=1;startSize=30;horizontal=1;fillColor=#ffedd5;strokeColor=#ea580c;fontStyle=1;fontSize=13;fontColor=#c2410c;rounded=1;arcSize=4;" vertex="1" parent="1">
+          <mxGeometry x="40" y="370" width="1720" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="lambda_box" value="λ AWS Lambda Backend Engine: hare-backend-api&#xa;Node.js 20.x | Serverless Express | 512 MB RAM | 30s Timeout" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fed7aa;strokeColor=#ea580c;fontStyle=1;fontSize=12;fontColor=#7c2d12;verticalAlign=top;" vertex="1" parent="lane3">
+          <mxGeometry x="30" y="40" width="1660" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="eng_auth" value="🔐 RBAC Auth Service&#xa;JWT Token Issue &amp; Verify&#xa;Worksite Scope Guard" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#ea580c;fontSize=11;fontStyle=1;" vertex="1" parent="lane3">
+          <mxGeometry x="60" y="80" width="230" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="eng_risk" value="🌡️ Authoritative Risk Engine&#xa;v1.0.0 Deterministic Rule Matrix&#xa;sWBGT Proxy | OSHA Guardrails" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#dc2626;fontSize=11;fontStyle=1;fontColor=#991b1b;" vertex="1" parent="lane3">
+          <mxGeometry x="340" y="80" width="260" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="eng_action" value="📋 Action Lifecycle Engine&#xa;SOP Generation &amp; In-Flight Dedup&#xa;Priority Queue &amp; Transitions" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#ea580c;fontSize=11;fontStyle=1;" vertex="1" parent="lane3">
+          <mxGeometry x="650" y="80" width="260" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="eng_audit" value="🔒 Cryptographic Audit Service&#xa;SHA-256 Hash Chaining&#xa;Tamper-Evident State Blocks" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#16a34a;fontSize=11;fontStyle=1;fontColor=#166534;" vertex="1" parent="lane3">
+          <mxGeometry x="960" y="80" width="250" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="ai_safety_box" value="🛡️ AI Safety Invariant&#xa;AI is strictly assistive.&#xa;NEVER in calculation path!" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fef2f2;strokeColor=#ef4444;fontSize=11;fontStyle=1;fontColor=#b91c1c;" vertex="1" parent="lane3">
+          <mxGeometry x="1260" y="80" width="200" height="65" as="geometry" />
+        </mxCell>
+
+        <!-- SWIMLANE 4: EXTERNAL TELEMETRY & AI -->
+        <mxCell id="lane4" value="4. EXTERNAL DATA TELEMETRY &amp; ASSISTIVE AI" style="swimlane;html=1;startSize=30;horizontal=1;fillColor=#fae8ff;strokeColor=#a855f7;fontStyle=1;fontSize=13;fontColor=#7e22ce;rounded=1;arcSize=4;" vertex="1" parent="1">
+          <mxGeometry x="40" y="570" width="1720" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ext_weather" value="🌦️ Open-Meteo Weather API&#xa;Hourly UTC Dry-Bulb, Humidity,&#xa;Direct Solar Radiation &amp; Wind" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#64748b;fontStyle=1;fontSize=11;" vertex="1" parent="lane4">
+          <mxGeometry x="80" y="45" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ai_bedrock" value="🧠 Amazon Bedrock&#xa;• Titan Embeddings V2 (1024-dim)&#xa;• Nova Micro (Safety Summaries)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#a855f7;fontStyle=1;fontSize=11;fontColor=#6b21a8;" vertex="1" parent="lane4">
+          <mxGeometry x="420" y="45" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ai_nvidia" value="✨ NVIDIA NIM Assistive AI&#xa;Meta Llama 3.2 11B Vision Instruct&#xa;Advisory &amp; Multilingual Summaries" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#a855f7;fontStyle=1;fontSize=11;fontColor=#6b21a8;" vertex="1" parent="lane4">
+          <mxGeometry x="780" y="45" width="290" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- SWIMLANE 5: DATA PERSISTENCE LAYER -->
+        <mxCell id="lane5" value="5. DURABLE DATA PERSISTENCE LAYER" style="swimlane;html=1;startSize=30;horizontal=1;fillColor=#dcfce7;strokeColor=#16a34a;fontStyle=1;fontSize=13;fontColor=#15803d;rounded=1;arcSize=4;" vertex="1" parent="1">
+          <mxGeometry x="40" y="710" width="1720" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="ddb_ops" value="🗄️ DynamoDB: HARE-OperationalTable&#xa;Actions, Worksites, Statuses&#xa;GSI1 (Supervisor Index)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#16a34a;fontStyle=1;fontSize=11;fontColor=#14532d;" vertex="1" parent="lane5">
+          <mxGeometry x="50" y="45" width="270" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="ddb_tel" value="🗄️ DynamoDB: HARE-TelemetryTable&#xa;Atmospheric Time-Series Observations&#xa;Worksite Sensor Caching" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#16a34a;fontStyle=1;fontSize=11;fontColor=#14532d;" vertex="1" parent="lane5">
+          <mxGeometry x="370" y="45" width="270" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="ddb_aud" value="🗄️ DynamoDB: HARE-AuditTable&#xa;SHA-256 Chained Audit Blocks&#xa;Immutable Regulatory Proof" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#16a34a;fontStyle=1;fontSize=11;fontColor=#14532d;" vertex="1" parent="lane5">
+          <mxGeometry x="690" y="45" width="270" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="rds_db" value="🐘 Amazon RDS PostgreSQL 18.3&#xa;hare-relational-db (db.t3.micro, 20GB)&#xa;Enterprise Compliance SQL Reporting" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#0284c7;fontStyle=1;fontSize=11;fontColor=#0369a1;" vertex="1" parent="lane5">
+          <mxGeometry x="1010" y="45" width="290" height="65" as="geometry" />
+        </mxCell>
+
+        <!-- SWIMLANE 6: WORKFLOW, MESSAGING & GOVERNANCE -->
+        <mxCell id="lane6" value="6. WORKFLOW ORCHESTRATION, NOTIFICATIONS &amp; GOVERNANCE LAYER" style="swimlane;html=1;startSize=30;horizontal=1;fillColor=#fce7f3;strokeColor=#db2777;fontStyle=1;fontSize=13;fontColor=#be185d;rounded=1;arcSize=4;" vertex="1" parent="1">
+          <mxGeometry x="40" y="860" width="1720" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="sfn_state" value="🔄 AWS Step Functions State Machine&#xa;HARE-SupervisorEscalation-StateMachine&#xa;30s SLA Countdown &amp; Callback" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#db2777;fontStyle=1;fontSize=11;fontColor=#9d174d;" vertex="1" parent="lane6">
+          <mxGeometry x="40" y="50" width="290" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="sns_alerts" value="📢 Amazon SNS Topics&#xa;• hare-emergency-heat-alerts&#xa;• hare-escalation-breaches" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#ea580c;fontStyle=1;fontSize=11;fontColor=#c2410c;" vertex="1" parent="lane6">
+          <mxGeometry x="380" y="50" width="240" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="eventbridge" value="⏰ Amazon EventBridge&#xa;Bus: heat-action-event-bus&#xa;Rule: hare-weather-ingest-schedule (15m)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#db2777;fontStyle=1;fontSize=11;fontColor=#9d174d;" vertex="1" parent="lane6">
+          <mxGeometry x="670" y="50" width="270" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="cloudwatch" value="📊 Amazon CloudWatch&#xa;Logs, Dashboard HARE-Operational-Cockpit&#xa;Alarm HARE-LambdaErrors-Alarm" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#ca8a04;fontStyle=1;fontSize=11;fontColor=#854d0e;" vertex="1" parent="lane6">
+          <mxGeometry x="990" y="50" width="270" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="budget" value="💰 AWS Budgets&#xa;HARE-Hackathon-Safety-Budget&#xa;$50.00/mo Credit Protection (us-east-1)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#ca8a04;fontStyle=1;fontSize=11;fontColor=#854d0e;" vertex="1" parent="lane6">
+          <mxGeometry x="1310" y="50" width="250" height="75" as="geometry" />
+        </mxCell>
+
+        <!-- CONNECTING EDGES -->
+        <!-- Users to S3 -->
+        <mxCell id="e_u1_s3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0284c7;strokeWidth=2;" edge="1" source="user_sup" target="s3_app" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_u2_s3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0284c7;strokeWidth=2;" edge="1" source="user_mgr" target="s3_app" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_u3_s3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0284c7;strokeWidth=2;" edge="1" source="user_adm" target="s3_app" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- S3 to APIGW -->
+        <mxCell id="e_s3_gw" value="HTTPS REST (CORS)" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2563eb;strokeWidth=2;fontStyle=1;fontSize=10;" edge="1" source="s3_app" target="apigw" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- EC2 to APIGW -->
+        <mxCell id="e_ec2_gw" value="Telemetry Ingest" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#ea580c;strokeWidth=2;fontStyle=1;fontSize=10;" edge="1" source="ec2_edge" target="apigw" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- APIGW to Lambda -->
+        <mxCell id="e_gw_lambda" value="Proxy Payload" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#7c3aed;strokeWidth=2;fontStyle=1;fontSize=10;" edge="1" source="apigw" target="lambda_box" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Lambda to External -->
+        <mxCell id="e_lam_weather" value="Weather Fetch (UTC)" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748b;strokeWidth=2;fontStyle=1;fontSize=10;" edge="1" source="eng_risk" target="ext_weather" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_lam_bedrock" value="Embeddings / Summaries" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#a855f7;strokeWidth=2;fontStyle=1;fontSize=10;" edge="1" source="eng_action" target="ai_bedrock" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Lambda to Persistence -->
+        <mxCell id="e_lam_ddb_ops" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#16a34a;strokeWidth=2;" edge="1" source="eng_action" target="ddb_ops" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_lam_ddb_tel" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#16a34a;strokeWidth=2;" edge="1" source="eng_risk" target="ddb_tel" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_lam_ddb_aud" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#16a34a;strokeWidth=2;" edge="1" source="eng_audit" target="ddb_aud" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_lam_rds" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0284c7;strokeWidth=2;" edge="1" source="eng_audit" target="rds_db" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Lambda to Step Functions & SNS -->
+        <mxCell id="e_lam_sfn" value="Trigger 30s SLA" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#db2777;strokeWidth=2;fontStyle=1;fontSize=10;" edge="1" source="eng_action" target="sfn_state" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_sfn_sns" value="SLA Breach Alert" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#ef4444;strokeWidth=2;fontStyle=1;fontSize=10;" edge="1" source="sfn_state" target="sns_alerts" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_event_lam" value="15-min Telemetry Cron" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#db2777;strokeWidth=2;fontStyle=1;fontSize=10;" edge="1" source="eventbridge" target="lambda_box" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,33 @@
+# Environment and secret files
+.env
+.env.*
+!.env.example
+*.env
+
+# Build outputs
+dist/
+build/
+coverage/
+*.tsbuildinfo
+*.zip
+
+# Scratch and temporary scripts
+scratch/
+
+# Node dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Operating System & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo

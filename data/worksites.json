@@ -1,0 +1,718 @@
+[
+  {
+    "worksite_id": "WS-BLR-NORTH-04",
+    "name": "North Bengaluru Metro Viaduct Site",
+    "organization_id": "org_infra_corp",
+    "timezone": "Asia/Kolkata",
+    "worksite_type": "CONSTRUCTION",
+    "environment_type": "OUTDOOR",
+    "location": {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "address": "Outer Ring Road, Hebbal Junction, Bengaluru",
+      "latitude": 13.0358,
+      "longitude": 77.597,
+      "elevation_m": 920
+    },
+    "zones": [
+      {
+        "zone_id": "ZONE-01-REBAR",
+        "name": "Sector 4 Rebar Fabrication Pad",
+        "sun_exposure": "DIRECT_SUN",
+        "workload_category": "HEAVY",
+        "active_crew_count": 20,
+        "shade_available": true,
+        "water_access_distance_m": 45
+      },
+      {
+        "zone_id": "ZONE-02-CASTING",
+        "name": "Casting Yard Batching Plant",
+        "sun_exposure": "PARTIAL_SHADE",
+        "workload_category": "MODERATE",
+        "active_crew_count": 8,
+        "shade_available": true,
+        "water_access_distance_m": 15
+      }
+    ],
+    "safeguards": {
+      "water_stations_count": 4,
+      "shaded_rest_areas_count": 2,
+      "active_misting_fans_count": 2,
+      "first_aid_station_present": true,
+      "nearest_medical_facility_km": 2.5
+    },
+    "assigned_supervisor_id": "usr_sup_rahul",
+    "active_shift_id": "SHIFT-DAY-01",
+    "status": "ACTIVE",
+    "created_at_utc": "2026-03-15T06:00:00Z",
+    "updated_at_utc": "2026-10-11T12:03:06.753Z"
+  },
+  {
+    "worksite_id": "WS-BLR-SOUTH-02",
+    "name": "South Bengaluru Tech Corridor Expansion",
+    "organization_id": "org_infra_corp",
+    "timezone": "Asia/Kolkata",
+    "worksite_type": "CONSTRUCTION",
+    "environment_type": "OUTDOOR",
+    "location": {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "address": "Bannerghatta Main Road, Bengaluru",
+      "latitude": 12.925,
+      "longitude": 77.5938,
+      "elevation_m": 910
+    },
+    "zones": [
+      {
+        "zone_id": "ZONE-01-FACADE",
+        "name": "Glazing & External Facade Installation",
+        "sun_exposure": "DIRECT_SUN",
+        "workload_category": "MODERATE",
+        "active_crew_count": 12,
+        "shade_available": false,
+        "water_access_distance_m": 30
+      }
+    ],
+    "safeguards": {
+      "water_stations_count": 3,
+      "shaded_rest_areas_count": 1,
+      "active_misting_fans_count": 1,
+      "first_aid_station_present": true,
+      "nearest_medical_facility_km": 1.8
+    },
+    "assigned_supervisor_id": "usr_sup_kiran",
+    "active_shift_id": "SHIFT-SOUTH-01",
+    "status": "ACTIVE",
+    "created_at_utc": "2026-03-20T06:00:00Z",
+    "updated_at_utc": "2026-10-07T08:00:00Z"
+  },
+  {
+    "worksite_id": "WS-TEST-MV01O6QW",
+    "name": "Airport Metro Station Link",
+    "organization_id": "org_infra_corp",
+    "timezone": "Asia/Kolkata",
+    "worksite_type": "CONSTRUCTION",
+    "environment_type": "OUTDOOR",
+    "location": {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "address": "",
+      "latitude": 13.1986,
+      "longitude": 77.7066,
+      "elevation_m": 900
+    },
+    "zones": [
+      {
+        "zone_id": "ZONE-A1",
+        "name": "Terminal Canopy Assembly",
+        "sun_exposure": "PARTIAL_SHADE",
+        "workload_category": "MODERATE",
+        "active_crew_count": 14,
+        "shade_available": true,
+        "water_access_distance_m": 20
+      }
+    ],
+    "safeguards": {
+      "water_stations_count": 2,
+      "shaded_rest_areas_count": 1,
+      "active_misting_fans_count": 0,
+      "first_aid_station_present": true
+    },
+    "assigned_supervisor_id": "usr_adm_vikram",
+    "status": "ACTIVE",
+    "created_at_utc": "2026-10-08T21:24:30.645Z",
+    "updated_at_utc": "2026-10-08T21:24:30.645Z"
+  },
+  {
+    "worksite_id": "WS-TEST-MV02QMHB",
+    "name": "Airport Metro Station Link",
+    "organization_id": "org_infra_corp",
+    "timezone": "Asia/Kolkata",
+    "worksite_type": "CONSTRUCTION",
+    "environment_type": "OUTDOOR",
+    "location": {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "address": "",
+      "latitude": 13.1986,
+      "longitude": 77.7066,
+      "elevation_m": 900
+    },
+    "zones": [
+      {
+        "zone_id": "ZONE-A1",
+        "name": "Terminal Canopy Assembly",
+        "sun_exposure": "PARTIAL_SHADE",
+        "workload_category": "MODERATE",
+        "active_crew_count": 14,
+        "shade_available": true,
+        "water_access_distance_m": 20
+      }
+    ],
+    "safeguards": {
+      "water_stations_count": 2,
+      "shaded_rest_areas_count": 1,
+      "active_misting_fans_count": 0,
+      "first_aid_station_present": true
+    },
+    "assigned_supervisor_id": "usr_adm_vikram",
+    "status": "ACTIVE",
+    "created_at_utc": "2026-10-08T21:54:23.956Z",
+    "updated_at_utc": "2026-10-08T21:54:23.956Z"
+  },
+  {
+    "worksite_id": "WS-TEST-MV02VJQW",
+    "name": "Airport Metro Station Link",
+    "organization_id": "org_infra_corp",
+    "timezone": "Asia/Kolkata",
+    "worksite_type": "CONSTRUCTION",
+    "environment_type": "OUTDOOR",
+    "location": {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "address": "",
+      "latitude": 13.1986,
+      "longitude": 77.7066,
+      "elevation_m": 900
+    },
+    "zones": [
+      {
+        "zone_id": "ZONE-A1",
+        "name": "Terminal Canopy Assembly",
+        "sun_exposure": "PARTIAL_SHADE",
+        "workload_category": "MODERATE",
+        "active_crew_count": 14,
+        "shade_available": true,
+        "water_access_distance_m": 20
+      }
+    ],
+    "safeguards": {
+      "water_stations_count": 2,
+      "shaded_rest_areas_count": 1,
+      "active_misting_fans_count": 0,
+      "first_aid_station_present": true
+    },
+    "assigned_supervisor_id": "usr_adm_vikram",
+    "status": "ACTIVE",
+    "created_at_utc": "2026-10-08T21:58:13.693Z",
+    "updated_at_utc": "2026-10-08T21:58:13.693Z"
+  },
+  {
+    "worksite_id": "WS-TEST-MV02ZUTZ",
+    "name": "Airport Metro Station Link",
+    "organization_id": "org_infra_corp",
+    "timezone": "Asia/Kolkata",
+    "worksite_type": "CONSTRUCTION",
+    "environment_type": "OUTDOOR",
+    "location": {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "address": "",
+      "latitude": 13.1986,
+      "longitude": 77.7066,
+      "elevation_m": 900
+    },
+    "zones": [
+      {
+        "zone_id": "ZONE-A1",
+        "name": "Terminal Canopy Assembly",
+        "sun_exposure": "PARTIAL_SHADE",
+        "workload_category": "MODERATE",
+        "active_crew_count": 14,
+        "shade_available": true,
+        "water_access_distance_m": 20
+      }
+    ],
+    "safeguards": {
+      "water_stations_count": 2,
+      "shaded_rest_areas_count": 1,
+      "active_misting_fans_count": 0,
+      "first_aid_station_present": true
+    },
+    "assigned_supervisor_id": "usr_adm_vikram",
+    "status": "ACTIVE",
+    "created_at_utc": "2026-10-08T22:01:34.683Z",
+    "updated_at_utc": "2026-10-08T22:01:34.683Z"
+  },
+  {
+    "worksite_id": "WS-TEST-MV032C2G",
+    "name": "Airport Metro Station Link",
+    "organization_id": "org_infra_corp",
+    "timezone": "Asia/Kolkata",
+    "worksite_type": "CONSTRUCTION",
+    "environment_type": "OUTDOOR",
+    "location": {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "address": "",
+      "latitude": 13.1986,
+      "longitude": 77.7066,
+      "elevation_m": 900
+    },
+    "zones": [
+      {
+        "zone_id": "ZONE-A1",
+        "name": "Terminal Canopy Assembly",
+        "sun_exposure": "PARTIAL_SHADE",
+        "workload_category": "MODERATE",
+        "active_crew_count": 14,
+        "shade_available": true,
+        "water_access_distance_m": 20
+      }
+    ],
+    "safeguards": {
+      "water_stations_count": 2,
+      "shaded_rest_areas_count": 1,
+      "active_misting_fans_count": 0,
+      "first_aid_station_present": true
+    },
+    "assigned_supervisor_id": "usr_adm_vikram",
+    "status": "ACTIVE",
+    "created_at_utc": "2026-10-08T22:03:30.331Z",
+    "updated_at_utc": "2026-10-08T22:03:30.331Z"
+  },
+  {
+    "worksite_id": "WS-TEST-MV06DWSI",
+    "name": "Airport Metro Station Link",
+    "organization_id": "org_infra_corp",
+    "timezone": "Asia/Kolkata",
+    "worksite_type": "CONSTRUCTION",
+    "environment_type": "OUTDOOR",
+    "location": {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "address": "",
+      "latitude": 13.1986,
+      "longitude": 77.7066,
+      "elevation_m": 900
+    },
+    "zones": [
+      {
+        "zone_id": "ZONE-A1",
+        "name": "Terminal Canopy Assembly",
+        "sun_exposure": "PARTIAL_SHADE",
+        "workload_category": "MODERATE",
+        "active_crew_count": 14,
+        "shade_available": true,
+        "water_access_distance_m": 20
+      }
+    ],
+    "safeguards": {
+      "water_stations_count": 2,
+      "shaded_rest_areas_count": 1,
+      "active_misting_fans_count": 0,
+      "first_aid_station_present": true
+    },
+    "assigned_supervisor_id": "usr_adm_vikram",
+    "status": "ACTIVE",
+    "created_at_utc": "2026-10-08T23:36:29.270Z",
+    "updated_at_utc": "2026-10-08T23:36:29.270Z"
+  },
+  {
+    "worksite_id": "WS-TEST-MV06QYKM",
+    "name": "Airport Metro Station Link",
+    "organization_id": "org_infra_corp",
+    "timezone": "Asia/Kolkata",
+    "worksite_type": "CONSTRUCTION",
+    "environment_type": "OUTDOOR",
+    "location": {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "address": "",
+      "latitude": 13.1986,
+      "longitude": 77.7066,
+      "elevation_m": 900
+    },
+    "zones": [
+      {
+        "zone_id": "ZONE-A1",
+        "name": "Terminal Canopy Assembly",
+        "sun_exposure": "PARTIAL_SHADE",
+        "workload_category": "MODERATE",
+        "active_crew_count": 14,
+        "shade_available": true,
+        "water_access_distance_m": 20
+      }
+    ],
+    "safeguards": {
+      "water_stations_count": 2,
+      "shaded_rest_areas_count": 1,
+      "active_misting_fans_count": 0,
+      "first_aid_station_present": true
+    },
+    "assigned_supervisor_id": "usr_adm_vikram",
+    "status": "ACTIVE",
+    "created_at_utc": "2026-10-08T23:46:38.089Z",
+    "updated_at_utc": "2026-10-08T23:46:38.089Z"
+  },
+  {
+    "worksite_id": "WS-TEST-MV06RPAW",
+    "name": "Airport Metro Station Link",
+    "organization_id": "org_infra_corp",
+    "timezone": "Asia/Kolkata",
+    "worksite_type": "CONSTRUCTION",
+    "environment_type": "OUTDOOR",
+    "location": {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "address": "",
+      "latitude": 13.1986,
+      "longitude": 77.7066,
+      "elevation_m": 900
+    },
+    "zones": [
+      {
+        "zone_id": "ZONE-A1",
+        "name": "Terminal Canopy Assembly",
+        "sun_exposure": "PARTIAL_SHADE",
+        "workload_category": "MODERATE",
+        "active_crew_count": 14,
+        "shade_available": true,
+        "water_access_distance_m": 20
+      }
+    ],
+    "safeguards": {
+      "water_stations_count": 2,
+      "shaded_rest_areas_count": 1,
+      "active_misting_fans_count": 0,
+      "first_aid_station_present": true
+    },
+    "assigned_supervisor_id": "usr_adm_vikram",
+    "status": "ACTIVE",
+    "created_at_utc": "2026-10-08T23:47:12.732Z",
+    "updated_at_utc": "2026-10-08T23:47:12.732Z"
+  },
+  {
+    "worksite_id": "WS-TEST-MV09MRRM",
+    "name": "Airport Metro Station Link",
+    "organization_id": "org_infra_corp",
+    "timezone": "Asia/Kolkata",
+    "worksite_type": "CONSTRUCTION",
+    "environment_type": "OUTDOOR",
+    "location": {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "address": "",
+      "latitude": 13.1986,
+      "longitude": 77.7066,
+      "elevation_m": 900
+    },
+    "zones": [
+      {
+        "zone_id": "ZONE-A1",
+        "name": "Terminal Canopy Assembly",
+        "sun_exposure": "PARTIAL_SHADE",
+        "workload_category": "MODERATE",
+        "active_crew_count": 14,
+        "shade_available": true,
+        "water_access_distance_m": 20
+      }
+    ],
+    "safeguards": {
+      "water_stations_count": 2,
+      "shaded_rest_areas_count": 1,
+      "active_misting_fans_count": 0,
+      "first_aid_station_present": true
+    },
+    "assigned_supervisor_id": "usr_adm_vikram",
+    "status": "ACTIVE",
+    "created_at_utc": "2026-10-09T01:07:21.494Z",
+    "updated_at_utc": "2026-10-09T01:07:21.494Z"
+  },
+  {
+    "worksite_id": "WS-TEST-MV09O1EW",
+    "name": "Airport Metro Station Link",
+    "organization_id": "org_infra_corp",
+    "timezone": "Asia/Kolkata",
+    "worksite_type": "CONSTRUCTION",
+    "environment_type": "OUTDOOR",
+    "location": {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "address": "",
+      "latitude": 13.1986,
+      "longitude": 77.7066,
+      "elevation_m": 900
+    },
+    "zones": [
+      {
+        "zone_id": "ZONE-A1",
+        "name": "Terminal Canopy Assembly",
+        "sun_exposure": "PARTIAL_SHADE",
+        "workload_category": "MODERATE",
+        "active_crew_count": 14,
+        "shade_available": true,
+        "water_access_distance_m": 20
+      }
+    ],
+    "safeguards": {
+      "water_stations_count": 2,
+      "shaded_rest_areas_count": 1,
+      "active_misting_fans_count": 0,
+      "first_aid_station_present": true
+    },
+    "assigned_supervisor_id": "usr_adm_vikram",
+    "status": "ACTIVE",
+    "created_at_utc": "2026-10-09T01:08:20.654Z",
+    "updated_at_utc": "2026-10-09T01:08:20.654Z"
+  },
+  {
+    "worksite_id": "WS-TEST-MV09PPA5",
+    "name": "Airport Metro Station Link",
+    "organization_id": "org_infra_corp",
+    "timezone": "Asia/Kolkata",
+    "worksite_type": "CONSTRUCTION",
+    "environment_type": "OUTDOOR",
+    "location": {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "address": "",
+      "latitude": 13.1986,
+      "longitude": 77.7066,
+      "elevation_m": 900
+    },
+    "zones": [
+      {
+        "zone_id": "ZONE-A1",
+        "name": "Terminal Canopy Assembly",
+        "sun_exposure": "PARTIAL_SHADE",
+        "workload_category": "MODERATE",
+        "active_crew_count": 14,
+        "shade_available": true,
+        "water_access_distance_m": 20
+      }
+    ],
+    "safeguards": {
+      "water_stations_count": 2,
+      "shaded_rest_areas_count": 1,
+      "active_misting_fans_count": 0,
+      "first_aid_station_present": true
+    },
+    "assigned_supervisor_id": "usr_adm_vikram",
+    "status": "ACTIVE",
+    "created_at_utc": "2026-10-09T01:09:38.242Z",
+    "updated_at_utc": "2026-10-09T01:09:38.242Z"
+  },
+  {
+    "worksite_id": "WS-TEST-MV3MSHZD",
+    "name": "Airport Metro Station Link",
+    "organization_id": "org_infra_corp",
+    "timezone": "Asia/Kolkata",
+    "worksite_type": "CONSTRUCTION",
+    "environment_type": "OUTDOOR",
+    "location": {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "address": "",
+      "latitude": 13.1986,
+      "longitude": 77.7066,
+      "elevation_m": 900
+    },
+    "zones": [
+      {
+        "zone_id": "ZONE-A1",
+        "name": "Terminal Canopy Assembly",
+        "sun_exposure": "PARTIAL_SHADE",
+        "workload_category": "MODERATE",
+        "active_crew_count": 14,
+        "shade_available": true,
+        "water_access_distance_m": 20
+      }
+    ],
+    "safeguards": {
+      "water_stations_count": 2,
+      "shaded_rest_areas_count": 1,
+      "active_misting_fans_count": 0,
+      "first_aid_station_present": true
+    },
+    "assigned_supervisor_id": "usr_adm_vikram",
+    "status": "ACTIVE",
+    "created_at_utc": "2026-10-11T09:39:02.327Z",
+    "updated_at_utc": "2026-10-11T09:39:02.327Z"
+  },
+  {
+    "worksite_id": "WS-TEST-MV3NUYB9",
+    "name": "Airport Metro Station Link",
+    "organization_id": "org_infra_corp",
+    "timezone": "Asia/Kolkata",
+    "worksite_type": "CONSTRUCTION",
+    "environment_type": "OUTDOOR",
+    "location": {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "address": "",
+      "latitude": 13.1986,
+      "longitude": 77.7066,
+      "elevation_m": 900
+    },
+    "zones": [
+      {
+        "zone_id": "ZONE-A1",
+        "name": "Terminal Canopy Assembly",
+        "sun_exposure": "PARTIAL_SHADE",
+        "workload_category": "MODERATE",
+        "active_crew_count": 14,
+        "shade_available": true,
+        "water_access_distance_m": 20
+      }
+    ],
+    "safeguards": {
+      "water_stations_count": 2,
+      "shaded_rest_areas_count": 1,
+      "active_misting_fans_count": 0,
+      "first_aid_station_present": true
+    },
+    "assigned_supervisor_id": "usr_adm_vikram",
+    "status": "ACTIVE",
+    "created_at_utc": "2026-10-11T10:08:56.376Z",
+    "updated_at_utc": "2026-10-11T10:08:56.376Z"
+  },
+  {
+    "worksite_id": "WS-TEST-MV3PXBJ6",
+    "name": "Airport Metro Station Link",
+    "organization_id": "org_infra_corp",
+    "timezone": "Asia/Kolkata",
+    "worksite_type": "CONSTRUCTION",
+    "environment_type": "OUTDOOR",
+    "location": {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "address": "",
+      "latitude": 13.1986,
+      "longitude": 77.7066,
+      "elevation_m": 900
+    },
+    "zones": [
+      {
+        "zone_id": "ZONE-A1",
+        "name": "Terminal Canopy Assembly",
+        "sun_exposure": "PARTIAL_SHADE",
+        "workload_category": "MODERATE",
+        "active_crew_count": 14,
+        "shade_available": true,
+        "water_access_distance_m": 20
+      }
+    ],
+    "safeguards": {
+      "water_stations_count": 2,
+      "shaded_rest_areas_count": 1,
+      "active_misting_fans_count": 0,
+      "first_aid_station_present": true
+    },
+    "assigned_supervisor_id": "usr_adm_vikram",
+    "status": "ACTIVE",
+    "created_at_utc": "2026-10-11T11:06:46.069Z",
+    "updated_at_utc": "2026-10-11T11:06:46.069Z"
+  },
+  {
+    "worksite_id": "WS-TEST-MV3QC6A3",
+    "name": "Airport Metro Station Link",
+    "organization_id": "org_infra_corp",
+    "timezone": "Asia/Kolkata",
+    "worksite_type": "CONSTRUCTION",
+    "environment_type": "OUTDOOR",
+    "location": {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "address": "",
+      "latitude": 13.1986,
+      "longitude": 77.7066,
+      "elevation_m": 900
+    },
+    "zones": [
+      {
+        "zone_id": "ZONE-A1",
+        "name": "Terminal Canopy Assembly",
+        "sun_exposure": "PARTIAL_SHADE",
+        "workload_category": "MODERATE",
+        "active_crew_count": 14,
+        "shade_available": true,
+        "water_access_distance_m": 20
+      }
+    ],
+    "safeguards": {
+      "water_stations_count": 2,
+      "shaded_rest_areas_count": 1,
+      "active_misting_fans_count": 0,
+      "first_aid_station_present": true
+    },
+    "assigned_supervisor_id": "usr_adm_vikram",
+    "status": "ACTIVE",
+    "created_at_utc": "2026-10-11T11:18:19.088Z",
+    "updated_at_utc": "2026-10-11T11:18:19.088Z"
+  },
+  {
+    "worksite_id": "WS-TEST-MV3QFT3A",
+    "name": "Airport Metro Station Link",
+    "organization_id": "org_infra_corp",
+    "timezone": "Asia/Kolkata",
+    "worksite_type": "CONSTRUCTION",
+    "environment_type": "OUTDOOR",
+    "location": {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "address": "",
+      "latitude": 13.1986,
+      "longitude": 77.7066,
+      "elevation_m": 900
+    },
+    "zones": [
+      {
+        "zone_id": "ZONE-A1",
+        "name": "Terminal Canopy Assembly",
+        "sun_exposure": "PARTIAL_SHADE",
+        "workload_category": "MODERATE",
+        "active_crew_count": 14,
+        "shade_available": true,
+        "water_access_distance_m": 20
+      }
+    ],
+    "safeguards": {
+      "water_stations_count": 2,
+      "shaded_rest_areas_count": 1,
+      "active_misting_fans_count": 0,
+      "first_aid_station_present": true
+    },
+    "assigned_supervisor_id": "usr_adm_vikram",
+    "status": "ACTIVE",
+    "created_at_utc": "2026-10-11T11:21:08.618Z",
+    "updated_at_utc": "2026-10-11T11:21:08.618Z"
+  },
+  {
+    "worksite_id": "WS-TEST-MV3RXRWR",
+    "name": "Airport Metro Station Link",
+    "organization_id": "org_infra_corp",
+    "timezone": "Asia/Kolkata",
+    "worksite_type": "CONSTRUCTION",
+    "environment_type": "OUTDOOR",
+    "location": {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "address": "",
+      "latitude": 13.1986,
+      "longitude": 77.7066,
+      "elevation_m": 900
+    },
+    "zones": [
+      {
+        "zone_id": "ZONE-A1",
+        "name": "Terminal Canopy Assembly",
+        "sun_exposure": "PARTIAL_SHADE",
+        "workload_category": "MODERATE",
+        "active_crew_count": 14,
+        "shade_available": true,
+        "water_access_distance_m": 20
+      }
+    ],
+    "safeguards": {
+      "water_stations_count": 2,
+      "shaded_rest_areas_count": 1,
+      "active_misting_fans_count": 0,
+      "first_aid_station_present": true
+    },
+    "assigned_supervisor_id": "usr_adm_vikram",
+    "status": "ACTIVE",
+    "created_at_utc": "2026-10-11T12:03:06.510Z",
+    "updated_at_utc": "2026-10-11T12:03:06.510Z"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "user_id": "usr_sup_rahul",
+    "email": "rahul@site.hare.local",
+    "full_name": "Rahul Kumar",
+    "role": "SUPERVISOR",
+    "organization_id": "org_infra_corp",
+    "assigned_worksite_id": "WS-BLR-NORTH-04",
+    "password_hash": "$2a$10$OhDTuMbpE8BjFd.VtVauG.KbmiVYMEbQuI4BPj96d2OrZUCGRECpe",
+    "is_active": true,
+    "created_at_utc": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "user_id": "usr_mgr_ananya",
+    "email": "ananya@safety.hare.local",
+    "full_name": "Ananya Rao",
+    "role": "SAFETY_MANAGER",
+    "organization_id": "org_infra_corp",
+    "assigned_worksite_id": "ALL",
+    "password_hash": "$2a$10$OhDTuMbpE8BjFd.VtVauG.KbmiVYMEbQuI4BPj96d2OrZUCGRECpe",
+    "is_active": true,
+    "created_at_utc": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "user_id": "usr_adm_vikram",
+    "email": "vikram@admin.hare.local",
+    "full_name": "Vikram Singh",
+    "role": "ADMIN",
+    "organization_id": "org_infra_corp",
+    "assigned_worksite_id": "ALL",
+    "password_hash": "$2a$10$OhDTuMbpE8BjFd.VtVauG.KbmiVYMEbQuI4BPj96d2OrZUCGRECpe",
+    "is_active": true,
+    "created_at_utc": "2026-10-01T00:00:00.000Z"
+  }
+]

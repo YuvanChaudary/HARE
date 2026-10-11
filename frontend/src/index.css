@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+:root {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Surfaces & Canvas */
+  --bg-primary: #0f172a;       /* Deep slate nav */
+  --bg-app: #f8fafc;           /* Clean canvas */
+  --bg-card: #ffffff;
+  --bg-secondary: #f1f5f9;
+  --bg-hover: #e2e8f0;
+
+  /* Borders */
+  --border-light: #e2e8f0;
+  --border-medium: #cbd5e1;
+  --border-dark: #334155;
+
+  /* Typography */
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+  --text-light: #f8fafc;
+
+  /* Safety Severity Palettes */
+  --color-low: #10b981;        /* Emerald */
+  --color-low-bg: #ecfdf5;
+  --color-moderate: #f59e0b;   /* Amber */
+  --color-moderate-bg: #fffbeb;
+  --color-high: #f97316;       /* Deep Orange */
+  --color-high-bg: #fff7ed;
+  --color-critical: #ef4444;   /* Crimson */
+  --color-critical-bg: #fef2f2;
+  --color-unknown: #64748b;
+  --color-unknown-bg: #f1f5f9;
+
+  /* Brand & Actions */
+  --primary: #0284c7;          /* Sky 600 */
+  --primary-hover: #0369a1;    /* Sky 700 */
+  --primary-light: #e0f2fe;    /* Sky 100 */
+  --danger: #dc2626;
+  --warning: #d97706;
+  --success: #16a34a;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-app);
+  color: var(--text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+code, pre {
+  font-family: var(--font-mono);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Common UI Utilities */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+}
+
+.badge-low { background-color: var(--color-low-bg); color: #065f46; border: 1px solid #a7f3d0; }
+.badge-moderate { background-color: var(--color-moderate-bg); color: #92400e; border: 1px solid #fde68a; }
+.badge-high { background-color: var(--color-high-bg); color: #9a3412; border: 1px solid #fed7aa; }
+.badge-critical { background-color: var(--color-critical-bg); color: #991b1b; border: 1px solid #fecaca; }
+.badge-unknown { background-color: var(--color-unknown-bg); color: #334155; border: 1px solid #cbd5e1; }
+
+.badge-status-created { background: #f1f5f9; color: #475569; }
+.badge-status-assigned { background: #e0f2fe; color: #0369a1; }
+.badge-status-ack { background: #ede9fe; color: #6d28d9; }
+.badge-status-in_progress { background: #fef3c7; color: #b45309; }
+.badge-status-blocked { background: #fee2e2; color: #b91c1c; }
+.badge-status-completed { background: #dcfce7; color: #15803d; }
+.badge-status-verified { background: #bbf7d0; color: #166534; font-weight: 700; border: 1px solid #86efac; }
+.badge-status-escalated { background: #fecdd3; color: #9f1239; font-weight: 700; animation: pulse 2s infinite; }
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: all 0.15s ease-in-out;
+}
+.btn-primary {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+.btn-primary:hover:not(:disabled) {
+  background-color: var(--primary-hover);
+}
+.btn-secondary {
+  background-color: #ffffff;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-medium);
+}
+.btn-secondary:hover:not(:disabled) {
+  background-color: var(--bg-secondary);
+}
+.btn-danger {
+  background-color: #ef4444;
+  color: #ffffff;
+}
+.btn-danger:hover:not(:disabled) {
+  background-color: #dc2626;
+}
+.btn-success {
+  background-color: #10b981;
+  color: #ffffff;
+}
+.btn-success:hover:not(:disabled) {
+  background-color: #059669;
+}
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

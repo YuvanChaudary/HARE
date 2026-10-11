@@ -1,0 +1,32 @@
+{
+  "name": "heat-action-response-engine",
+  "version": "1.0.0",
+  "private": true,
+  "description": "From heat warning to verified workplace action - Heat Action Response Engine (HARE)",
+  "workspaces": [
+    "shared",
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev:backend": "npm run dev --workspace=backend",
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "dev": "npm run dev --workspace=backend",
+    "build:shared": "npm run build --workspace=shared",
+    "build:backend": "npm run build --workspace=backend",
+    "build:frontend": "npm run build --workspace=frontend",
+    "build": "npm run build:shared && npm run build:backend && npm run build:frontend",
+    "test": "npm run test --workspace=backend",
+    "start": "npm run start --workspace=backend"
+  },
+  "keywords": [
+    "heat-stress",
+    "occupational-safety",
+    "worker-safety",
+    "hare",
+    "weather",
+    "nvidia-nim"
+  ],
+  "author": "Heat Action Response Engine Team",
+  "license": "UNLICENSED"
+}

@@ -1,0 +1,3299 @@
+[
+  {
+    "assessment_id": "rsk_1791496794846_ws_blr_north_04",
+    "risk_id": "rsk_1791496794846_ws_blr_north_04",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "risk_level": "LOW",
+    "heat_index_c": 21.2,
+    "swbgt_c": 25.2,
+    "trigger_factors": [
+      "Heat Index (21.2°C) is below baseline advisory threshold (32°C)"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_LOW"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-08T21:59:54.846Z",
+    "valid_until_utc": "2026-10-08T22:59:54.846Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-08T21:45:00.000Z",
+      "observation_age_minutes": 14,
+      "station_id": "OPEN_METEO_GRID_13.0404215_77.63422"
+    },
+    "risk_factors": [
+      {
+        "factor_name": "DRY_BULB_TEMPERATURE",
+        "value": 20.9,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "BASELINE"
+      },
+      {
+        "factor_name": "RELATIVE_HUMIDITY",
+        "value": 97,
+        "unit": "PERCENT",
+        "weight": "MAJOR",
+        "contribution": "HIGH_EVAPORATIVE_RESISTANCE"
+      },
+      {
+        "factor_name": "HEAT_INDEX",
+        "value": 21.2,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "MINIMAL_STRAIN"
+      },
+      {
+        "factor_name": "SWBGT_ESTIMATED",
+        "value": 25.2,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "NOMINAL_ENVIRONMENTAL_LOAD"
+      },
+      {
+        "factor_name": "WORKLOAD_INTENSITY",
+        "value": "HEAVY",
+        "unit": "METABOLIC_RATE",
+        "weight": "MAJOR",
+        "contribution": "SIGNIFICANT_INTERNAL_HEAT"
+      },
+      {
+        "factor_name": "DIRECT_SUN_EXPOSURE",
+        "value": "DIRECT_SUN",
+        "unit": "EXPOSURE_CLASS",
+        "weight": "MODERATE",
+        "contribution": "SOLAR_RADIATION_ADDITION"
+      },
+      {
+        "factor_name": "ACCLIMATIZATION_PROFILE",
+        "value": "ESTABLISHED",
+        "unit": "ROSTER_STATUS",
+        "weight": "MINOR",
+        "contribution": "ESTABLISHED_SEASONAL_ADAPTATION"
+      }
+    ],
+    "explanation": {
+      "what": "Worksite is operating at LOW heat risk.",
+      "why": "Worksite reached LOW operational risk because calculated Heat Index (21.2°C) coincides with HEAVY labor in DIRECT SUN.",
+      "data": "Based on validated telemetry from 2026-10-08T21:45:00.000Z (14m old, quality: VALID).",
+      "rule": "Evaluated against Approved Rule Matrix v1.0.0 (NOAA SR 90-23 / OSHA NEP / NIOSH Criteria / ISO 7243).",
+      "limitations": "Direct physical wet-bulb globe temperature sensor unavailable; sWBGT estimated from standard ambient temperature and humidity models.",
+      "next_steps": "Standard operational baseline; verify potable water dispensers are replenished."
+    },
+    "reason_synthesis": "Worksite reached LOW operational risk because calculated Heat Index (21.2°C) coincides with HEAVY labor in DIRECT SUN.",
+    "generated_action_ids": []
+  },
+  {
+    "assessment_id": "rsk_1791496795608_ws_blr_north_04",
+    "risk_id": "rsk_1791496795608_ws_blr_north_04",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "risk_level": "LOW",
+    "heat_index_c": 21.2,
+    "swbgt_c": 25.2,
+    "trigger_factors": [
+      "Heat Index (21.2°C) is below baseline advisory threshold (32°C)"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_LOW"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-08T21:59:55.608Z",
+    "valid_until_utc": "2026-10-08T22:59:55.608Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-08T21:45:00.000Z",
+      "observation_age_minutes": 14,
+      "station_id": "OPEN_METEO_GRID_13.0404215_77.63422"
+    },
+    "risk_factors": [
+      {
+        "factor_name": "DRY_BULB_TEMPERATURE",
+        "value": 20.9,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "BASELINE"
+      },
+      {
+        "factor_name": "RELATIVE_HUMIDITY",
+        "value": 97,
+        "unit": "PERCENT",
+        "weight": "MAJOR",
+        "contribution": "HIGH_EVAPORATIVE_RESISTANCE"
+      },
+      {
+        "factor_name": "HEAT_INDEX",
+        "value": 21.2,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "MINIMAL_STRAIN"
+      },
+      {
+        "factor_name": "SWBGT_ESTIMATED",
+        "value": 25.2,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "NOMINAL_ENVIRONMENTAL_LOAD"
+      },
+      {
+        "factor_name": "WORKLOAD_INTENSITY",
+        "value": "HEAVY",
+        "unit": "METABOLIC_RATE",
+        "weight": "MAJOR",
+        "contribution": "SIGNIFICANT_INTERNAL_HEAT"
+      },
+      {
+        "factor_name": "DIRECT_SUN_EXPOSURE",
+        "value": "DIRECT_SUN",
+        "unit": "EXPOSURE_CLASS",
+        "weight": "MODERATE",
+        "contribution": "SOLAR_RADIATION_ADDITION"
+      },
+      {
+        "factor_name": "ACCLIMATIZATION_PROFILE",
+        "value": "ESTABLISHED",
+        "unit": "ROSTER_STATUS",
+        "weight": "MINOR",
+        "contribution": "ESTABLISHED_SEASONAL_ADAPTATION"
+      }
+    ],
+    "explanation": {
+      "what": "Worksite is operating at LOW heat risk.",
+      "why": "Worksite reached LOW operational risk because calculated Heat Index (21.2°C) coincides with HEAVY labor in DIRECT SUN.",
+      "data": "Based on validated telemetry from 2026-10-08T21:45:00.000Z (14m old, quality: VALID).",
+      "rule": "Evaluated against Approved Rule Matrix v1.0.0 (NOAA SR 90-23 / OSHA NEP / NIOSH Criteria / ISO 7243).",
+      "limitations": "Direct physical wet-bulb globe temperature sensor unavailable; sWBGT estimated from standard ambient temperature and humidity models.",
+      "next_steps": "Standard operational baseline; verify potable water dispensers are replenished."
+    },
+    "reason_synthesis": "Worksite reached LOW operational risk because calculated Heat Index (21.2°C) coincides with HEAVY labor in DIRECT SUN.",
+    "generated_action_ids": []
+  },
+  {
+    "assessment_id": "rsk_1791496879160_ws_blr_north_04",
+    "risk_id": "rsk_1791496879160_ws_blr_north_04",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "risk_level": "LOW",
+    "heat_index_c": 21.2,
+    "swbgt_c": 25.2,
+    "trigger_factors": [
+      "Heat Index (21.2°C) is below baseline advisory threshold (32°C)"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_LOW"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-08T22:01:19.160Z",
+    "valid_until_utc": "2026-10-08T23:01:19.160Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-08T22:00:00.000Z",
+      "observation_age_minutes": 1,
+      "station_id": "OPEN_METEO_GRID_13.0404215_77.63422"
+    },
+    "risk_factors": [
+      {
+        "factor_name": "DRY_BULB_TEMPERATURE",
+        "value": 20.9,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "BASELINE"
+      },
+      {
+        "factor_name": "RELATIVE_HUMIDITY",
+        "value": 97,
+        "unit": "PERCENT",
+        "weight": "MAJOR",
+        "contribution": "HIGH_EVAPORATIVE_RESISTANCE"
+      },
+      {
+        "factor_name": "HEAT_INDEX",
+        "value": 21.2,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "MINIMAL_STRAIN"
+      },
+      {
+        "factor_name": "SWBGT_ESTIMATED",
+        "value": 25.2,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "NOMINAL_ENVIRONMENTAL_LOAD"
+      },
+      {
+        "factor_name": "WORKLOAD_INTENSITY",
+        "value": "HEAVY",
+        "unit": "METABOLIC_RATE",
+        "weight": "MAJOR",
+        "contribution": "SIGNIFICANT_INTERNAL_HEAT"
+      },
+      {
+        "factor_name": "DIRECT_SUN_EXPOSURE",
+        "value": "DIRECT_SUN",
+        "unit": "EXPOSURE_CLASS",
+        "weight": "MODERATE",
+        "contribution": "SOLAR_RADIATION_ADDITION"
+      },
+      {
+        "factor_name": "ACCLIMATIZATION_PROFILE",
+        "value": "ESTABLISHED",
+        "unit": "ROSTER_STATUS",
+        "weight": "MINOR",
+        "contribution": "ESTABLISHED_SEASONAL_ADAPTATION"
+      }
+    ],
+    "explanation": {
+      "what": "Worksite is operating at LOW heat risk.",
+      "why": "Worksite reached LOW operational risk because calculated Heat Index (21.2°C) coincides with HEAVY labor in DIRECT SUN.",
+      "data": "Based on validated telemetry from 2026-10-08T22:00:00.000Z (1m old, quality: VALID).",
+      "rule": "Evaluated against Approved Rule Matrix v1.0.0 (NOAA SR 90-23 / OSHA NEP / NIOSH Criteria / ISO 7243).",
+      "limitations": "Direct physical wet-bulb globe temperature sensor unavailable; sWBGT estimated from standard ambient temperature and humidity models.",
+      "next_steps": "Standard operational baseline; verify potable water dispensers are replenished."
+    },
+    "reason_synthesis": "Worksite reached LOW operational risk because calculated Heat Index (21.2°C) coincides with HEAVY labor in DIRECT SUN.",
+    "generated_action_ids": []
+  },
+  {
+    "assessment_id": "rsk_1791496879735_ws_blr_north_04",
+    "risk_id": "rsk_1791496879735_ws_blr_north_04",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "risk_level": "LOW",
+    "heat_index_c": 21.2,
+    "swbgt_c": 25.2,
+    "trigger_factors": [
+      "Heat Index (21.2°C) is below baseline advisory threshold (32°C)"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_LOW"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-08T22:01:19.735Z",
+    "valid_until_utc": "2026-10-08T23:01:19.735Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-08T22:00:00.000Z",
+      "observation_age_minutes": 1,
+      "station_id": "OPEN_METEO_GRID_13.0404215_77.63422"
+    },
+    "risk_factors": [
+      {
+        "factor_name": "DRY_BULB_TEMPERATURE",
+        "value": 20.9,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "BASELINE"
+      },
+      {
+        "factor_name": "RELATIVE_HUMIDITY",
+        "value": 97,
+        "unit": "PERCENT",
+        "weight": "MAJOR",
+        "contribution": "HIGH_EVAPORATIVE_RESISTANCE"
+      },
+      {
+        "factor_name": "HEAT_INDEX",
+        "value": 21.2,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "MINIMAL_STRAIN"
+      },
+      {
+        "factor_name": "SWBGT_ESTIMATED",
+        "value": 25.2,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "NOMINAL_ENVIRONMENTAL_LOAD"
+      },
+      {
+        "factor_name": "WORKLOAD_INTENSITY",
+        "value": "HEAVY",
+        "unit": "METABOLIC_RATE",
+        "weight": "MAJOR",
+        "contribution": "SIGNIFICANT_INTERNAL_HEAT"
+      },
+      {
+        "factor_name": "DIRECT_SUN_EXPOSURE",
+        "value": "DIRECT_SUN",
+        "unit": "EXPOSURE_CLASS",
+        "weight": "MODERATE",
+        "contribution": "SOLAR_RADIATION_ADDITION"
+      },
+      {
+        "factor_name": "ACCLIMATIZATION_PROFILE",
+        "value": "ESTABLISHED",
+        "unit": "ROSTER_STATUS",
+        "weight": "MINOR",
+        "contribution": "ESTABLISHED_SEASONAL_ADAPTATION"
+      }
+    ],
+    "explanation": {
+      "what": "Worksite is operating at LOW heat risk.",
+      "why": "Worksite reached LOW operational risk because calculated Heat Index (21.2°C) coincides with HEAVY labor in DIRECT SUN.",
+      "data": "Based on validated telemetry from 2026-10-08T22:00:00.000Z (1m old, quality: VALID).",
+      "rule": "Evaluated against Approved Rule Matrix v1.0.0 (NOAA SR 90-23 / OSHA NEP / NIOSH Criteria / ISO 7243).",
+      "limitations": "Direct physical wet-bulb globe temperature sensor unavailable; sWBGT estimated from standard ambient temperature and humidity models.",
+      "next_steps": "Standard operational baseline; verify potable water dispensers are replenished."
+    },
+    "reason_synthesis": "Worksite reached LOW operational risk because calculated Heat Index (21.2°C) coincides with HEAVY labor in DIRECT SUN.",
+    "generated_action_ids": []
+  },
+  {
+    "assessment_id": "rsk_1791496897832_ws_blr_north_04",
+    "risk_id": "rsk_1791496897832_ws_blr_north_04",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "risk_level": "LOW",
+    "heat_index_c": 21.2,
+    "swbgt_c": 25.2,
+    "trigger_factors": [
+      "Heat Index (21.2°C) is below baseline advisory threshold (32°C)"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_LOW"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-08T22:01:37.832Z",
+    "valid_until_utc": "2026-10-08T23:01:37.832Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-08T22:00:00.000Z",
+      "observation_age_minutes": 1,
+      "station_id": "OPEN_METEO_GRID_13.0404215_77.63422"
+    },
+    "risk_factors": [
+      {
+        "factor_name": "DRY_BULB_TEMPERATURE",
+        "value": 20.9,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "BASELINE"
+      },
+      {
+        "factor_name": "RELATIVE_HUMIDITY",
+        "value": 97,
+        "unit": "PERCENT",
+        "weight": "MAJOR",
+        "contribution": "HIGH_EVAPORATIVE_RESISTANCE"
+      },
+      {
+        "factor_name": "HEAT_INDEX",
+        "value": 21.2,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "MINIMAL_STRAIN"
+      },
+      {
+        "factor_name": "SWBGT_ESTIMATED",
+        "value": 25.2,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "NOMINAL_ENVIRONMENTAL_LOAD"
+      },
+      {
+        "factor_name": "WORKLOAD_INTENSITY",
+        "value": "HEAVY",
+        "unit": "METABOLIC_RATE",
+        "weight": "MAJOR",
+        "contribution": "SIGNIFICANT_INTERNAL_HEAT"
+      },
+      {
+        "factor_name": "DIRECT_SUN_EXPOSURE",
+        "value": "DIRECT_SUN",
+        "unit": "EXPOSURE_CLASS",
+        "weight": "MODERATE",
+        "contribution": "SOLAR_RADIATION_ADDITION"
+      },
+      {
+        "factor_name": "ACCLIMATIZATION_PROFILE",
+        "value": "ESTABLISHED",
+        "unit": "ROSTER_STATUS",
+        "weight": "MINOR",
+        "contribution": "ESTABLISHED_SEASONAL_ADAPTATION"
+      }
+    ],
+    "explanation": {
+      "what": "Worksite is operating at LOW heat risk.",
+      "why": "Worksite reached LOW operational risk because calculated Heat Index (21.2°C) coincides with HEAVY labor in DIRECT SUN.",
+      "data": "Based on validated telemetry from 2026-10-08T22:00:00.000Z (1m old, quality: VALID).",
+      "rule": "Evaluated against Approved Rule Matrix v1.0.0 (NOAA SR 90-23 / OSHA NEP / NIOSH Criteria / ISO 7243).",
+      "limitations": "Direct physical wet-bulb globe temperature sensor unavailable; sWBGT estimated from standard ambient temperature and humidity models.",
+      "next_steps": "Standard operational baseline; verify potable water dispensers are replenished."
+    },
+    "reason_synthesis": "Worksite reached LOW operational risk because calculated Heat Index (21.2°C) coincides with HEAVY labor in DIRECT SUN.",
+    "generated_action_ids": []
+  },
+  {
+    "assessment_id": "rsk_1791496898408_ws_blr_north_04",
+    "risk_id": "rsk_1791496898408_ws_blr_north_04",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "risk_level": "LOW",
+    "heat_index_c": 21.2,
+    "swbgt_c": 25.2,
+    "trigger_factors": [
+      "Heat Index (21.2°C) is below baseline advisory threshold (32°C)"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_LOW"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-08T22:01:38.408Z",
+    "valid_until_utc": "2026-10-08T23:01:38.408Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-08T22:00:00.000Z",
+      "observation_age_minutes": 1,
+      "station_id": "OPEN_METEO_GRID_13.0404215_77.63422"
+    },
+    "risk_factors": [
+      {
+        "factor_name": "DRY_BULB_TEMPERATURE",
+        "value": 20.9,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "BASELINE"
+      },
+      {
+        "factor_name": "RELATIVE_HUMIDITY",
+        "value": 97,
+        "unit": "PERCENT",
+        "weight": "MAJOR",
+        "contribution": "HIGH_EVAPORATIVE_RESISTANCE"
+      },
+      {
+        "factor_name": "HEAT_INDEX",
+        "value": 21.2,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "MINIMAL_STRAIN"
+      },
+      {
+        "factor_name": "SWBGT_ESTIMATED",
+        "value": 25.2,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "NOMINAL_ENVIRONMENTAL_LOAD"
+      },
+      {
+        "factor_name": "WORKLOAD_INTENSITY",
+        "value": "HEAVY",
+        "unit": "METABOLIC_RATE",
+        "weight": "MAJOR",
+        "contribution": "SIGNIFICANT_INTERNAL_HEAT"
+      },
+      {
+        "factor_name": "DIRECT_SUN_EXPOSURE",
+        "value": "DIRECT_SUN",
+        "unit": "EXPOSURE_CLASS",
+        "weight": "MODERATE",
+        "contribution": "SOLAR_RADIATION_ADDITION"
+      },
+      {
+        "factor_name": "ACCLIMATIZATION_PROFILE",
+        "value": "ESTABLISHED",
+        "unit": "ROSTER_STATUS",
+        "weight": "MINOR",
+        "contribution": "ESTABLISHED_SEASONAL_ADAPTATION"
+      }
+    ],
+    "explanation": {
+      "what": "Worksite is operating at LOW heat risk.",
+      "why": "Worksite reached LOW operational risk because calculated Heat Index (21.2°C) coincides with HEAVY labor in DIRECT SUN.",
+      "data": "Based on validated telemetry from 2026-10-08T22:00:00.000Z (1m old, quality: VALID).",
+      "rule": "Evaluated against Approved Rule Matrix v1.0.0 (NOAA SR 90-23 / OSHA NEP / NIOSH Criteria / ISO 7243).",
+      "limitations": "Direct physical wet-bulb globe temperature sensor unavailable; sWBGT estimated from standard ambient temperature and humidity models.",
+      "next_steps": "Standard operational baseline; verify potable water dispensers are replenished."
+    },
+    "reason_synthesis": "Worksite reached LOW operational risk because calculated Heat Index (21.2°C) coincides with HEAVY labor in DIRECT SUN.",
+    "generated_action_ids": []
+  },
+  {
+    "assessment_id": "rsk_1791497013803_ws_blr_north_04",
+    "risk_id": "rsk_1791497013803_ws_blr_north_04",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "risk_level": "LOW",
+    "heat_index_c": 21.2,
+    "swbgt_c": 25.2,
+    "trigger_factors": [
+      "Heat Index (21.2°C) is below baseline advisory threshold (32°C)"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_LOW"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-08T22:03:33.803Z",
+    "valid_until_utc": "2026-10-08T23:03:33.803Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-08T22:00:00.000Z",
+      "observation_age_minutes": 3,
+      "station_id": "OPEN_METEO_GRID_13.0404215_77.63422"
+    },
+    "risk_factors": [
+      {
+        "factor_name": "DRY_BULB_TEMPERATURE",
+        "value": 20.9,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "BASELINE"
+      },
+      {
+        "factor_name": "RELATIVE_HUMIDITY",
+        "value": 97,
+        "unit": "PERCENT",
+        "weight": "MAJOR",
+        "contribution": "HIGH_EVAPORATIVE_RESISTANCE"
+      },
+      {
+        "factor_name": "HEAT_INDEX",
+        "value": 21.2,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "MINIMAL_STRAIN"
+      },
+      {
+        "factor_name": "SWBGT_ESTIMATED",
+        "value": 25.2,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "NOMINAL_ENVIRONMENTAL_LOAD"
+      },
+      {
+        "factor_name": "WORKLOAD_INTENSITY",
+        "value": "HEAVY",
+        "unit": "METABOLIC_RATE",
+        "weight": "MAJOR",
+        "contribution": "SIGNIFICANT_INTERNAL_HEAT"
+      },
+      {
+        "factor_name": "DIRECT_SUN_EXPOSURE",
+        "value": "DIRECT_SUN",
+        "unit": "EXPOSURE_CLASS",
+        "weight": "MODERATE",
+        "contribution": "SOLAR_RADIATION_ADDITION"
+      },
+      {
+        "factor_name": "ACCLIMATIZATION_PROFILE",
+        "value": "ESTABLISHED",
+        "unit": "ROSTER_STATUS",
+        "weight": "MINOR",
+        "contribution": "ESTABLISHED_SEASONAL_ADAPTATION"
+      }
+    ],
+    "explanation": {
+      "what": "Worksite is operating at LOW heat risk.",
+      "why": "Worksite reached LOW operational risk because calculated Heat Index (21.2°C) coincides with HEAVY labor in DIRECT SUN.",
+      "data": "Based on validated telemetry from 2026-10-08T22:00:00.000Z (3m old, quality: VALID).",
+      "rule": "Evaluated against Approved Rule Matrix v1.0.0 (NOAA SR 90-23 / OSHA NEP / NIOSH Criteria / ISO 7243).",
+      "limitations": "Direct physical wet-bulb globe temperature sensor unavailable; sWBGT estimated from standard ambient temperature and humidity models.",
+      "next_steps": "Standard operational baseline; verify potable water dispensers are replenished."
+    },
+    "reason_synthesis": "Worksite reached LOW operational risk because calculated Heat Index (21.2°C) coincides with HEAVY labor in DIRECT SUN.",
+    "generated_action_ids": []
+  },
+  {
+    "assessment_id": "rsk_1791497014332_ws_blr_north_04",
+    "risk_id": "rsk_1791497014332_ws_blr_north_04",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "risk_level": "LOW",
+    "heat_index_c": 21.2,
+    "swbgt_c": 25.2,
+    "trigger_factors": [
+      "Heat Index (21.2°C) is below baseline advisory threshold (32°C)"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_LOW"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-08T22:03:34.332Z",
+    "valid_until_utc": "2026-10-08T23:03:34.332Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-08T22:00:00.000Z",
+      "observation_age_minutes": 3,
+      "station_id": "OPEN_METEO_GRID_13.0404215_77.63422"
+    },
+    "risk_factors": [
+      {
+        "factor_name": "DRY_BULB_TEMPERATURE",
+        "value": 20.9,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "BASELINE"
+      },
+      {
+        "factor_name": "RELATIVE_HUMIDITY",
+        "value": 97,
+        "unit": "PERCENT",
+        "weight": "MAJOR",
+        "contribution": "HIGH_EVAPORATIVE_RESISTANCE"
+      },
+      {
+        "factor_name": "HEAT_INDEX",
+        "value": 21.2,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "MINIMAL_STRAIN"
+      },
+      {
+        "factor_name": "SWBGT_ESTIMATED",
+        "value": 25.2,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "NOMINAL_ENVIRONMENTAL_LOAD"
+      },
+      {
+        "factor_name": "WORKLOAD_INTENSITY",
+        "value": "HEAVY",
+        "unit": "METABOLIC_RATE",
+        "weight": "MAJOR",
+        "contribution": "SIGNIFICANT_INTERNAL_HEAT"
+      },
+      {
+        "factor_name": "DIRECT_SUN_EXPOSURE",
+        "value": "DIRECT_SUN",
+        "unit": "EXPOSURE_CLASS",
+        "weight": "MODERATE",
+        "contribution": "SOLAR_RADIATION_ADDITION"
+      },
+      {
+        "factor_name": "ACCLIMATIZATION_PROFILE",
+        "value": "ESTABLISHED",
+        "unit": "ROSTER_STATUS",
+        "weight": "MINOR",
+        "contribution": "ESTABLISHED_SEASONAL_ADAPTATION"
+      }
+    ],
+    "explanation": {
+      "what": "Worksite is operating at LOW heat risk.",
+      "why": "Worksite reached LOW operational risk because calculated Heat Index (21.2°C) coincides with HEAVY labor in DIRECT SUN.",
+      "data": "Based on validated telemetry from 2026-10-08T22:00:00.000Z (3m old, quality: VALID).",
+      "rule": "Evaluated against Approved Rule Matrix v1.0.0 (NOAA SR 90-23 / OSHA NEP / NIOSH Criteria / ISO 7243).",
+      "limitations": "Direct physical wet-bulb globe temperature sensor unavailable; sWBGT estimated from standard ambient temperature and humidity models.",
+      "next_steps": "Standard operational baseline; verify potable water dispensers are replenished."
+    },
+    "reason_synthesis": "Worksite reached LOW operational risk because calculated Heat Index (21.2°C) coincides with HEAVY labor in DIRECT SUN.",
+    "generated_action_ids": []
+  },
+  {
+    "assessment_id": "rsk_1791502342775_ws_blr_north_04",
+    "risk_id": "rsk_1791502342775_ws_blr_north_04",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "risk_level": "LOW",
+    "heat_index_c": 21.1,
+    "swbgt_c": 25.2,
+    "trigger_factors": [
+      "Heat Index (21.1°C) is below baseline advisory threshold (32°C)"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_LOW"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-08T23:32:22.775Z",
+    "valid_until_utc": "2026-10-09T00:32:22.775Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-08T23:30:00.000Z",
+      "observation_age_minutes": 2,
+      "station_id": "OPEN_METEO_GRID_13.0404215_77.63422"
+    },
+    "risk_factors": [
+      {
+        "factor_name": "DRY_BULB_TEMPERATURE",
+        "value": 20.8,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "BASELINE"
+      },
+      {
+        "factor_name": "RELATIVE_HUMIDITY",
+        "value": 98,
+        "unit": "PERCENT",
+        "weight": "MAJOR",
+        "contribution": "HIGH_EVAPORATIVE_RESISTANCE"
+      },
+      {
+        "factor_name": "HEAT_INDEX",
+        "value": 21.1,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "MINIMAL_STRAIN"
+      },
+      {
+        "factor_name": "SWBGT_ESTIMATED",
+        "value": 25.2,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "NOMINAL_ENVIRONMENTAL_LOAD"
+      },
+      {
+        "factor_name": "WORKLOAD_INTENSITY",
+        "value": "HEAVY",
+        "unit": "METABOLIC_RATE",
+        "weight": "MAJOR",
+        "contribution": "SIGNIFICANT_INTERNAL_HEAT"
+      },
+      {
+        "factor_name": "DIRECT_SUN_EXPOSURE",
+        "value": "DIRECT_SUN",
+        "unit": "EXPOSURE_CLASS",
+        "weight": "MODERATE",
+        "contribution": "SOLAR_RADIATION_ADDITION"
+      },
+      {
+        "factor_name": "ACCLIMATIZATION_PROFILE",
+        "value": "ESTABLISHED",
+        "unit": "ROSTER_STATUS",
+        "weight": "MINOR",
+        "contribution": "ESTABLISHED_SEASONAL_ADAPTATION"
+      }
+    ],
+    "explanation": {
+      "what": "Worksite is operating at LOW heat risk.",
+      "why": "Worksite reached LOW operational risk because calculated Heat Index (21.1°C) coincides with HEAVY labor in DIRECT SUN.",
+      "data": "Based on validated telemetry from 2026-10-08T23:30:00.000Z (2m old, quality: VALID).",
+      "rule": "Evaluated against Approved Rule Matrix v1.0.0 (NOAA SR 90-23 / OSHA NEP / NIOSH Criteria / ISO 7243).",
+      "limitations": "Direct physical wet-bulb globe temperature sensor unavailable; sWBGT estimated from standard ambient temperature and humidity models.",
+      "next_steps": "Standard operational baseline; verify potable water dispensers are replenished."
+    },
+    "reason_synthesis": "Worksite reached LOW operational risk because calculated Heat Index (21.1°C) coincides with HEAVY labor in DIRECT SUN.",
+    "generated_action_ids": []
+  },
+  {
+    "assessment_id": "rsk_1791502342985_ws_blr_south_02",
+    "risk_id": "rsk_1791502342985_ws_blr_south_02",
+    "worksite_id": "WS-BLR-SOUTH-02",
+    "organization_id": "org_infra_corp",
+    "risk_level": "LOW",
+    "heat_index_c": 21.7,
+    "swbgt_c": 25.7,
+    "trigger_factors": [
+      "Heat Index (21.7°C) is below baseline advisory threshold (32°C)"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_LOW"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-08T23:32:22.985Z",
+    "valid_until_utc": "2026-10-09T00:32:22.985Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-08T23:30:00.000Z",
+      "observation_age_minutes": 2,
+      "station_id": "OPEN_METEO_GRID_12.899824_77.57493"
+    },
+    "risk_factors": [
+      {
+        "factor_name": "DRY_BULB_TEMPERATURE",
+        "value": 21.3,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "BASELINE"
+      },
+      {
+        "factor_name": "RELATIVE_HUMIDITY",
+        "value": 98,
+        "unit": "PERCENT",
+        "weight": "MAJOR",
+        "contribution": "HIGH_EVAPORATIVE_RESISTANCE"
+      },
+      {
+        "factor_name": "HEAT_INDEX",
+        "value": 21.7,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "MINIMAL_STRAIN"
+      },
+      {
+        "factor_name": "SWBGT_ESTIMATED",
+        "value": 25.7,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "NOMINAL_ENVIRONMENTAL_LOAD"
+      },
+      {
+        "factor_name": "WORKLOAD_INTENSITY",
+        "value": "MODERATE",
+        "unit": "METABOLIC_RATE",
+        "weight": "MINOR",
+        "contribution": "NOMINAL_METABOLIC_HEAT"
+      },
+      {
+        "factor_name": "DIRECT_SUN_EXPOSURE",
+        "value": "DIRECT_SUN",
+        "unit": "EXPOSURE_CLASS",
+        "weight": "MODERATE",
+        "contribution": "SOLAR_RADIATION_ADDITION"
+      },
+      {
+        "factor_name": "ACCLIMATIZATION_PROFILE",
+        "value": "ESTABLISHED",
+        "unit": "ROSTER_STATUS",
+        "weight": "MINOR",
+        "contribution": "ESTABLISHED_SEASONAL_ADAPTATION"
+      }
+    ],
+    "explanation": {
+      "what": "Worksite is operating at LOW heat risk.",
+      "why": "Worksite reached LOW operational risk because calculated Heat Index (21.7°C) coincides with MODERATE labor in DIRECT SUN.",
+      "data": "Based on validated telemetry from 2026-10-08T23:30:00.000Z (2m old, quality: VALID).",
+      "rule": "Evaluated against Approved Rule Matrix v1.0.0 (NOAA SR 90-23 / OSHA NEP / NIOSH Criteria / ISO 7243).",
+      "limitations": "Direct physical wet-bulb globe temperature sensor unavailable; sWBGT estimated from standard ambient temperature and humidity models.",
+      "next_steps": "Standard operational baseline; verify potable water dispensers are replenished."
+    },
+    "reason_synthesis": "Worksite reached LOW operational risk because calculated Heat Index (21.7°C) coincides with MODERATE labor in DIRECT SUN.",
+    "generated_action_ids": []
+  },
+  {
+    "assessment_id": "rsk_1791502604333_ws_blr_north_04",
+    "risk_id": "rsk_1791502604333_ws_blr_north_04",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "risk_level": "LOW",
+    "heat_index_c": 21.1,
+    "swbgt_c": 25.2,
+    "trigger_factors": [
+      "Heat Index (21.1°C) is below baseline advisory threshold (32°C)"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_LOW"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-08T23:36:44.333Z",
+    "valid_until_utc": "2026-10-09T00:36:44.333Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-08T23:30:00.000Z",
+      "observation_age_minutes": 6,
+      "station_id": "OPEN_METEO_GRID_13.0404215_77.63422"
+    },
+    "risk_factors": [
+      {
+        "factor_name": "DRY_BULB_TEMPERATURE",
+        "value": 20.8,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "BASELINE"
+      },
+      {
+        "factor_name": "RELATIVE_HUMIDITY",
+        "value": 98,
+        "unit": "PERCENT",
+        "weight": "MAJOR",
+        "contribution": "HIGH_EVAPORATIVE_RESISTANCE"
+      },
+      {
+        "factor_name": "HEAT_INDEX",
+        "value": 21.1,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "MINIMAL_STRAIN"
+      },
+      {
+        "factor_name": "SWBGT_ESTIMATED",
+        "value": 25.2,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "NOMINAL_ENVIRONMENTAL_LOAD"
+      },
+      {
+        "factor_name": "WORKLOAD_INTENSITY",
+        "value": "HEAVY",
+        "unit": "METABOLIC_RATE",
+        "weight": "MAJOR",
+        "contribution": "SIGNIFICANT_INTERNAL_HEAT"
+      },
+      {
+        "factor_name": "DIRECT_SUN_EXPOSURE",
+        "value": "DIRECT_SUN",
+        "unit": "EXPOSURE_CLASS",
+        "weight": "MODERATE",
+        "contribution": "SOLAR_RADIATION_ADDITION"
+      },
+      {
+        "factor_name": "ACCLIMATIZATION_PROFILE",
+        "value": "ESTABLISHED",
+        "unit": "ROSTER_STATUS",
+        "weight": "MINOR",
+        "contribution": "ESTABLISHED_SEASONAL_ADAPTATION"
+      }
+    ],
+    "explanation": {
+      "what": "Worksite is operating at LOW heat risk.",
+      "why": "Worksite reached LOW operational risk because calculated Heat Index (21.1°C) coincides with HEAVY labor in DIRECT SUN.",
+      "data": "Based on validated telemetry from 2026-10-08T23:30:00.000Z (6m old, quality: VALID).",
+      "rule": "Evaluated against Approved Rule Matrix v1.0.0 (NOAA SR 90-23 / OSHA NEP / NIOSH Criteria / ISO 7243).",
+      "limitations": "Direct physical wet-bulb globe temperature sensor unavailable; sWBGT estimated from standard ambient temperature and humidity models.",
+      "next_steps": "Standard operational baseline; verify potable water dispensers are replenished."
+    },
+    "reason_synthesis": "Worksite reached LOW operational risk because calculated Heat Index (21.1°C) coincides with HEAVY labor in DIRECT SUN.",
+    "generated_action_ids": []
+  },
+  {
+    "assessment_id": "rsk_1791502605601_ws_blr_north_04",
+    "risk_id": "rsk_1791502605601_ws_blr_north_04",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "risk_level": "LOW",
+    "heat_index_c": 21.1,
+    "swbgt_c": 25.2,
+    "trigger_factors": [
+      "Heat Index (21.1°C) is below baseline advisory threshold (32°C)"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_LOW"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-08T23:36:45.601Z",
+    "valid_until_utc": "2026-10-09T00:36:45.601Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-08T23:30:00.000Z",
+      "observation_age_minutes": 6,
+      "station_id": "OPEN_METEO_GRID_13.0404215_77.63422"
+    },
+    "risk_factors": [
+      {
+        "factor_name": "DRY_BULB_TEMPERATURE",
+        "value": 20.8,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "BASELINE"
+      },
+      {
+        "factor_name": "RELATIVE_HUMIDITY",
+        "value": 98,
+        "unit": "PERCENT",
+        "weight": "MAJOR",
+        "contribution": "HIGH_EVAPORATIVE_RESISTANCE"
+      },
+      {
+        "factor_name": "HEAT_INDEX",
+        "value": 21.1,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "MINIMAL_STRAIN"
+      },
+      {
+        "factor_name": "SWBGT_ESTIMATED",
+        "value": 25.2,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "NOMINAL_ENVIRONMENTAL_LOAD"
+      },
+      {
+        "factor_name": "WORKLOAD_INTENSITY",
+        "value": "HEAVY",
+        "unit": "METABOLIC_RATE",
+        "weight": "MAJOR",
+        "contribution": "SIGNIFICANT_INTERNAL_HEAT"
+      },
+      {
+        "factor_name": "DIRECT_SUN_EXPOSURE",
+        "value": "DIRECT_SUN",
+        "unit": "EXPOSURE_CLASS",
+        "weight": "MODERATE",
+        "contribution": "SOLAR_RADIATION_ADDITION"
+      },
+      {
+        "factor_name": "ACCLIMATIZATION_PROFILE",
+        "value": "ESTABLISHED",
+        "unit": "ROSTER_STATUS",
+        "weight": "MINOR",
+        "contribution": "ESTABLISHED_SEASONAL_ADAPTATION"
+      }
+    ],
+    "explanation": {
+      "what": "Worksite is operating at LOW heat risk.",
+      "why": "Worksite reached LOW operational risk because calculated Heat Index (21.1°C) coincides with HEAVY labor in DIRECT SUN.",
+      "data": "Based on validated telemetry from 2026-10-08T23:30:00.000Z (6m old, quality: VALID).",
+      "rule": "Evaluated against Approved Rule Matrix v1.0.0 (NOAA SR 90-23 / OSHA NEP / NIOSH Criteria / ISO 7243).",
+      "limitations": "Direct physical wet-bulb globe temperature sensor unavailable; sWBGT estimated from standard ambient temperature and humidity models.",
+      "next_steps": "Standard operational baseline; verify potable water dispensers are replenished."
+    },
+    "reason_synthesis": "Worksite reached LOW operational risk because calculated Heat Index (21.1°C) coincides with HEAVY labor in DIRECT SUN.",
+    "generated_action_ids": []
+  },
+  {
+    "assessment_id": "rsk_1791503236549_ws_blr_north_04",
+    "risk_id": "rsk_1791503236549_ws_blr_north_04",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "risk_level": "LOW",
+    "heat_index_c": 21.1,
+    "swbgt_c": 25.2,
+    "trigger_factors": [
+      "Heat Index (21.1°C) is below baseline advisory threshold (32°C)"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_LOW"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-08T23:47:16.549Z",
+    "valid_until_utc": "2026-10-09T00:47:16.549Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-08T23:45:00.000Z",
+      "observation_age_minutes": 2,
+      "station_id": "OPEN_METEO_GRID_13.0404215_77.63422"
+    },
+    "risk_factors": [
+      {
+        "factor_name": "DRY_BULB_TEMPERATURE",
+        "value": 20.7,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "BASELINE"
+      },
+      {
+        "factor_name": "RELATIVE_HUMIDITY",
+        "value": 99,
+        "unit": "PERCENT",
+        "weight": "MAJOR",
+        "contribution": "HIGH_EVAPORATIVE_RESISTANCE"
+      },
+      {
+        "factor_name": "HEAT_INDEX",
+        "value": 21.1,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "MINIMAL_STRAIN"
+      },
+      {
+        "factor_name": "SWBGT_ESTIMATED",
+        "value": 25.2,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "NOMINAL_ENVIRONMENTAL_LOAD"
+      },
+      {
+        "factor_name": "WORKLOAD_INTENSITY",
+        "value": "HEAVY",
+        "unit": "METABOLIC_RATE",
+        "weight": "MAJOR",
+        "contribution": "SIGNIFICANT_INTERNAL_HEAT"
+      },
+      {
+        "factor_name": "DIRECT_SUN_EXPOSURE",
+        "value": "DIRECT_SUN",
+        "unit": "EXPOSURE_CLASS",
+        "weight": "MODERATE",
+        "contribution": "SOLAR_RADIATION_ADDITION"
+      },
+      {
+        "factor_name": "ACCLIMATIZATION_PROFILE",
+        "value": "ESTABLISHED",
+        "unit": "ROSTER_STATUS",
+        "weight": "MINOR",
+        "contribution": "ESTABLISHED_SEASONAL_ADAPTATION"
+      }
+    ],
+    "explanation": {
+      "what": "Worksite is operating at LOW heat risk.",
+      "why": "Worksite reached LOW operational risk because calculated Heat Index (21.1°C) coincides with HEAVY labor in DIRECT SUN.",
+      "data": "Based on validated telemetry from 2026-10-08T23:45:00.000Z (2m old, quality: VALID).",
+      "rule": "Evaluated against Approved Rule Matrix v1.0.0 (NOAA SR 90-23 / OSHA NEP / IMD HAP / ISO 7243).",
+      "limitations": "Direct physical wet-bulb globe temperature sensor unavailable; sWBGT is an empirical mathematical proxy (BOM formula), not a physical black-globe measurement (ISO 7243). Base thresholds (32°C, 39°C, 46°C) reflect IMD Heat Action Plan & OSHA NEP demonstration baselines; client policy must verify site-specific thresholds.",
+      "next_steps": "Standard operational baseline; verify potable water dispensers are replenished."
+    },
+    "reason_synthesis": "Worksite reached LOW operational risk because calculated Heat Index (21.1°C) coincides with HEAVY labor in DIRECT SUN.",
+    "generated_action_ids": []
+  },
+  {
+    "assessment_id": "rsk_1791503236937_ws_blr_north_04",
+    "risk_id": "rsk_1791503236937_ws_blr_north_04",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "risk_level": "LOW",
+    "heat_index_c": 21.1,
+    "swbgt_c": 25.2,
+    "trigger_factors": [
+      "Heat Index (21.1°C) is below baseline advisory threshold (32°C)"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_LOW"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-08T23:47:16.937Z",
+    "valid_until_utc": "2026-10-09T00:47:16.937Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-08T23:45:00.000Z",
+      "observation_age_minutes": 2,
+      "station_id": "OPEN_METEO_GRID_13.0404215_77.63422"
+    },
+    "risk_factors": [
+      {
+        "factor_name": "DRY_BULB_TEMPERATURE",
+        "value": 20.7,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "BASELINE"
+      },
+      {
+        "factor_name": "RELATIVE_HUMIDITY",
+        "value": 99,
+        "unit": "PERCENT",
+        "weight": "MAJOR",
+        "contribution": "HIGH_EVAPORATIVE_RESISTANCE"
+      },
+      {
+        "factor_name": "HEAT_INDEX",
+        "value": 21.1,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "MINIMAL_STRAIN"
+      },
+      {
+        "factor_name": "SWBGT_ESTIMATED",
+        "value": 25.2,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "NOMINAL_ENVIRONMENTAL_LOAD"
+      },
+      {
+        "factor_name": "WORKLOAD_INTENSITY",
+        "value": "HEAVY",
+        "unit": "METABOLIC_RATE",
+        "weight": "MAJOR",
+        "contribution": "SIGNIFICANT_INTERNAL_HEAT"
+      },
+      {
+        "factor_name": "DIRECT_SUN_EXPOSURE",
+        "value": "DIRECT_SUN",
+        "unit": "EXPOSURE_CLASS",
+        "weight": "MODERATE",
+        "contribution": "SOLAR_RADIATION_ADDITION"
+      },
+      {
+        "factor_name": "ACCLIMATIZATION_PROFILE",
+        "value": "ESTABLISHED",
+        "unit": "ROSTER_STATUS",
+        "weight": "MINOR",
+        "contribution": "ESTABLISHED_SEASONAL_ADAPTATION"
+      }
+    ],
+    "explanation": {
+      "what": "Worksite is operating at LOW heat risk.",
+      "why": "Worksite reached LOW operational risk because calculated Heat Index (21.1°C) coincides with HEAVY labor in DIRECT SUN.",
+      "data": "Based on validated telemetry from 2026-10-08T23:45:00.000Z (2m old, quality: VALID).",
+      "rule": "Evaluated against Approved Rule Matrix v1.0.0 (NOAA SR 90-23 / OSHA NEP / IMD HAP / ISO 7243).",
+      "limitations": "Direct physical wet-bulb globe temperature sensor unavailable; sWBGT is an empirical mathematical proxy (BOM formula), not a physical black-globe measurement (ISO 7243). Base thresholds (32°C, 39°C, 46°C) reflect IMD Heat Action Plan & OSHA NEP demonstration baselines; client policy must verify site-specific thresholds.",
+      "next_steps": "Standard operational baseline; verify potable water dispensers are replenished."
+    },
+    "reason_synthesis": "Worksite reached LOW operational risk because calculated Heat Index (21.1°C) coincides with HEAVY labor in DIRECT SUN.",
+    "generated_action_ids": [
+      "act_1791503236937_ws_blr_north_04_act_chilled_water_refill"
+    ]
+  },
+  {
+    "assessment_id": "rsk_test_high_01",
+    "risk_id": "rsk_test_high_01",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_hare_safety_demo",
+    "shift_id": "SHIFT-DAY-01",
+    "risk_level": "HIGH",
+    "heat_index_c": 42.5,
+    "swbgt_c": 33.2,
+    "trigger_factors": [
+      "Heat Index (42.5°C) breaches High threshold (39°C - 45.9°C)",
+      "HEAVY labor in DIRECT SUN"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_HIGH",
+      "R02_COMBINED_CONTEXT_HIGH_TO_CRITICAL"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-08T11:30:00Z",
+    "valid_until_utc": "2026-10-08T12:30:00Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-08T11:25:00Z",
+      "observation_age_minutes": 5,
+      "station_id": "STN_BLR_NORTH_01"
+    },
+    "risk_factors": [],
+    "explanation": {
+      "what": "Worksite is operating at HIGH heat risk.",
+      "why": "Heat Index 42.5°C with HEAVY labor in DIRECT SUN.",
+      "data": "Observation 5m old, status VALID.",
+      "rule": "Rule Matrix v1.0.0",
+      "limitations": "sWBGT is proxy.",
+      "next_steps": "Mandate work-rest cycles."
+    },
+    "reason_synthesis": "High risk thermal strain.",
+    "generated_action_ids": [
+      "act_1791459000000_ws_blr_north_04_act_work_rest_cycle_adjust",
+      "act_1791459000000_ws_blr_north_04_act_hydration_staging",
+      "act_1791459000000_ws_blr_north_04_act_shade_canopy_deploy",
+      "act_1791459000000_ws_blr_north_04_act_buddy_system_activate",
+      "act_1791459000000_ws_blr_north_04_act_high_exertion_reschedule"
+    ]
+  },
+  {
+    "assessment_id": "rsk_1791508045800_ws_blr_north_04",
+    "risk_id": "rsk_1791508045800_ws_blr_north_04",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "risk_level": "LOW",
+    "heat_index_c": 21.4,
+    "swbgt_c": 25.3,
+    "trigger_factors": [
+      "Heat Index (21.4°C) is below baseline advisory threshold (32°C)"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_LOW"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-09T01:07:25.800Z",
+    "valid_until_utc": "2026-10-09T02:07:25.800Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-09T01:00:00.000Z",
+      "observation_age_minutes": 7,
+      "station_id": "OPEN_METEO_GRID_13.0404215_77.63422"
+    },
+    "risk_factors": [
+      {
+        "factor_name": "DRY_BULB_TEMPERATURE",
+        "value": 21.1,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "BASELINE"
+      },
+      {
+        "factor_name": "RELATIVE_HUMIDITY",
+        "value": 96,
+        "unit": "PERCENT",
+        "weight": "MAJOR",
+        "contribution": "HIGH_EVAPORATIVE_RESISTANCE"
+      },
+      {
+        "factor_name": "HEAT_INDEX",
+        "value": 21.4,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "MINIMAL_STRAIN"
+      },
+      {
+        "factor_name": "SWBGT_ESTIMATED",
+        "value": 25.3,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "NOMINAL_ENVIRONMENTAL_LOAD"
+      },
+      {
+        "factor_name": "WORKLOAD_INTENSITY",
+        "value": "HEAVY",
+        "unit": "METABOLIC_RATE",
+        "weight": "MAJOR",
+        "contribution": "SIGNIFICANT_INTERNAL_HEAT"
+      },
+      {
+        "factor_name": "DIRECT_SUN_EXPOSURE",
+        "value": "DIRECT_SUN",
+        "unit": "EXPOSURE_CLASS",
+        "weight": "MODERATE",
+        "contribution": "SOLAR_RADIATION_ADDITION"
+      },
+      {
+        "factor_name": "ACCLIMATIZATION_PROFILE",
+        "value": "ESTABLISHED",
+        "unit": "ROSTER_STATUS",
+        "weight": "MINOR",
+        "contribution": "ESTABLISHED_SEASONAL_ADAPTATION"
+      }
+    ],
+    "explanation": {
+      "what": "Worksite is operating at LOW heat risk.",
+      "why": "Worksite reached LOW operational risk because calculated Heat Index (21.4°C) coincides with HEAVY labor in DIRECT SUN.",
+      "data": "Based on validated telemetry from 2026-10-09T01:00:00.000Z (7m old, quality: VALID).",
+      "rule": "Evaluated against Approved Rule Matrix v1.0.0 (NOAA SR 90-23 / OSHA NEP / IMD HAP / ISO 7243).",
+      "limitations": "Direct physical wet-bulb globe temperature sensor unavailable; sWBGT is an empirical mathematical proxy (BOM formula), not a physical black-globe measurement (ISO 7243). Base thresholds (32°C, 39°C, 46°C) reflect IMD Heat Action Plan & OSHA NEP demonstration baselines; client policy must verify site-specific thresholds.",
+      "next_steps": "Standard operational baseline; verify potable water dispensers are replenished."
+    },
+    "reason_synthesis": "Worksite reached LOW operational risk because calculated Heat Index (21.4°C) coincides with HEAVY labor in DIRECT SUN.",
+    "generated_action_ids": []
+  },
+  {
+    "assessment_id": "rsk_1791508046384_ws_blr_north_04",
+    "risk_id": "rsk_1791508046384_ws_blr_north_04",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "risk_level": "LOW",
+    "heat_index_c": 21.4,
+    "swbgt_c": 25.3,
+    "trigger_factors": [
+      "Heat Index (21.4°C) is below baseline advisory threshold (32°C)"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_LOW"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-09T01:07:26.384Z",
+    "valid_until_utc": "2026-10-09T02:07:26.384Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-09T01:00:00.000Z",
+      "observation_age_minutes": 7,
+      "station_id": "OPEN_METEO_GRID_13.0404215_77.63422"
+    },
+    "risk_factors": [
+      {
+        "factor_name": "DRY_BULB_TEMPERATURE",
+        "value": 21.1,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "BASELINE"
+      },
+      {
+        "factor_name": "RELATIVE_HUMIDITY",
+        "value": 96,
+        "unit": "PERCENT",
+        "weight": "MAJOR",
+        "contribution": "HIGH_EVAPORATIVE_RESISTANCE"
+      },
+      {
+        "factor_name": "HEAT_INDEX",
+        "value": 21.4,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "MINIMAL_STRAIN"
+      },
+      {
+        "factor_name": "SWBGT_ESTIMATED",
+        "value": 25.3,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "NOMINAL_ENVIRONMENTAL_LOAD"
+      },
+      {
+        "factor_name": "WORKLOAD_INTENSITY",
+        "value": "HEAVY",
+        "unit": "METABOLIC_RATE",
+        "weight": "MAJOR",
+        "contribution": "SIGNIFICANT_INTERNAL_HEAT"
+      },
+      {
+        "factor_name": "DIRECT_SUN_EXPOSURE",
+        "value": "DIRECT_SUN",
+        "unit": "EXPOSURE_CLASS",
+        "weight": "MODERATE",
+        "contribution": "SOLAR_RADIATION_ADDITION"
+      },
+      {
+        "factor_name": "ACCLIMATIZATION_PROFILE",
+        "value": "ESTABLISHED",
+        "unit": "ROSTER_STATUS",
+        "weight": "MINOR",
+        "contribution": "ESTABLISHED_SEASONAL_ADAPTATION"
+      }
+    ],
+    "explanation": {
+      "what": "Worksite is operating at LOW heat risk.",
+      "why": "Worksite reached LOW operational risk because calculated Heat Index (21.4°C) coincides with HEAVY labor in DIRECT SUN.",
+      "data": "Based on validated telemetry from 2026-10-09T01:00:00.000Z (7m old, quality: VALID).",
+      "rule": "Evaluated against Approved Rule Matrix v1.0.0 (NOAA SR 90-23 / OSHA NEP / IMD HAP / ISO 7243).",
+      "limitations": "Direct physical wet-bulb globe temperature sensor unavailable; sWBGT is an empirical mathematical proxy (BOM formula), not a physical black-globe measurement (ISO 7243). Base thresholds (32°C, 39°C, 46°C) reflect IMD Heat Action Plan & OSHA NEP demonstration baselines; client policy must verify site-specific thresholds.",
+      "next_steps": "Standard operational baseline; verify potable water dispensers are replenished."
+    },
+    "reason_synthesis": "Worksite reached LOW operational risk because calculated Heat Index (21.4°C) coincides with HEAVY labor in DIRECT SUN.",
+    "generated_action_ids": [
+      "act_1791508046384_ws_blr_north_04_act_chilled_water_refill"
+    ]
+  },
+  {
+    "assessment_id": "rsk_test_high_02",
+    "risk_id": "rsk_test_high_02",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "shift_id": "SHIFT-DAY-01",
+    "risk_level": "HIGH",
+    "heat_index_c": 42.5,
+    "swbgt_c": 33.2,
+    "trigger_factors": [
+      "Heat Index (42.5°C) breaches High threshold (39°C - 45.9°C)",
+      "HEAVY labor in DIRECT SUN"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_HIGH",
+      "R02_COMBINED_CONTEXT_HIGH_TO_CRITICAL"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-08T11:45:00Z",
+    "valid_until_utc": "2026-10-08T12:30:00Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-08T11:25:00Z",
+      "observation_age_minutes": 5,
+      "station_id": "STN_BLR_NORTH_01"
+    },
+    "risk_factors": [],
+    "explanation": {
+      "what": "Worksite is operating at HIGH heat risk.",
+      "why": "Heat Index 42.5°C with HEAVY labor in DIRECT SUN.",
+      "data": "Observation 5m old, status VALID.",
+      "rule": "Rule Matrix v1.0.0",
+      "limitations": "sWBGT is proxy.",
+      "next_steps": "Mandate work-rest cycles."
+    },
+    "reason_synthesis": "High risk thermal strain."
+  },
+  {
+    "assessment_id": "rsk_1791508104601_ws_blr_north_04",
+    "risk_id": "rsk_1791508104601_ws_blr_north_04",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "risk_level": "LOW",
+    "heat_index_c": 21.4,
+    "swbgt_c": 25.3,
+    "trigger_factors": [
+      "Heat Index (21.4°C) is below baseline advisory threshold (32°C)"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_LOW"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-09T01:08:24.601Z",
+    "valid_until_utc": "2026-10-09T02:08:24.601Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-09T01:00:00.000Z",
+      "observation_age_minutes": 8,
+      "station_id": "OPEN_METEO_GRID_13.0404215_77.63422"
+    },
+    "risk_factors": [
+      {
+        "factor_name": "DRY_BULB_TEMPERATURE",
+        "value": 21.1,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "BASELINE"
+      },
+      {
+        "factor_name": "RELATIVE_HUMIDITY",
+        "value": 96,
+        "unit": "PERCENT",
+        "weight": "MAJOR",
+        "contribution": "HIGH_EVAPORATIVE_RESISTANCE"
+      },
+      {
+        "factor_name": "HEAT_INDEX",
+        "value": 21.4,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "MINIMAL_STRAIN"
+      },
+      {
+        "factor_name": "SWBGT_ESTIMATED",
+        "value": 25.3,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "NOMINAL_ENVIRONMENTAL_LOAD"
+      },
+      {
+        "factor_name": "WORKLOAD_INTENSITY",
+        "value": "HEAVY",
+        "unit": "METABOLIC_RATE",
+        "weight": "MAJOR",
+        "contribution": "SIGNIFICANT_INTERNAL_HEAT"
+      },
+      {
+        "factor_name": "DIRECT_SUN_EXPOSURE",
+        "value": "DIRECT_SUN",
+        "unit": "EXPOSURE_CLASS",
+        "weight": "MODERATE",
+        "contribution": "SOLAR_RADIATION_ADDITION"
+      },
+      {
+        "factor_name": "ACCLIMATIZATION_PROFILE",
+        "value": "ESTABLISHED",
+        "unit": "ROSTER_STATUS",
+        "weight": "MINOR",
+        "contribution": "ESTABLISHED_SEASONAL_ADAPTATION"
+      }
+    ],
+    "explanation": {
+      "what": "Worksite is operating at LOW heat risk.",
+      "why": "Worksite reached LOW operational risk because calculated Heat Index (21.4°C) coincides with HEAVY labor in DIRECT SUN.",
+      "data": "Based on validated telemetry from 2026-10-09T01:00:00.000Z (8m old, quality: VALID).",
+      "rule": "Evaluated against Approved Rule Matrix v1.0.0 (NOAA SR 90-23 / OSHA NEP / IMD HAP / ISO 7243).",
+      "limitations": "Direct physical wet-bulb globe temperature sensor unavailable; sWBGT is an empirical mathematical proxy (BOM formula), not a physical black-globe measurement (ISO 7243). Base thresholds (32°C, 39°C, 46°C) reflect IMD Heat Action Plan & OSHA NEP demonstration baselines; client policy must verify site-specific thresholds.",
+      "next_steps": "Standard operational baseline; verify potable water dispensers are replenished."
+    },
+    "reason_synthesis": "Worksite reached LOW operational risk because calculated Heat Index (21.4°C) coincides with HEAVY labor in DIRECT SUN.",
+    "generated_action_ids": []
+  },
+  {
+    "assessment_id": "rsk_1791508105007_ws_blr_north_04",
+    "risk_id": "rsk_1791508105007_ws_blr_north_04",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "risk_level": "LOW",
+    "heat_index_c": 21.4,
+    "swbgt_c": 25.3,
+    "trigger_factors": [
+      "Heat Index (21.4°C) is below baseline advisory threshold (32°C)"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_LOW"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-09T01:08:25.007Z",
+    "valid_until_utc": "2026-10-09T02:08:25.007Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-09T01:00:00.000Z",
+      "observation_age_minutes": 8,
+      "station_id": "OPEN_METEO_GRID_13.0404215_77.63422"
+    },
+    "risk_factors": [
+      {
+        "factor_name": "DRY_BULB_TEMPERATURE",
+        "value": 21.1,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "BASELINE"
+      },
+      {
+        "factor_name": "RELATIVE_HUMIDITY",
+        "value": 96,
+        "unit": "PERCENT",
+        "weight": "MAJOR",
+        "contribution": "HIGH_EVAPORATIVE_RESISTANCE"
+      },
+      {
+        "factor_name": "HEAT_INDEX",
+        "value": 21.4,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "MINIMAL_STRAIN"
+      },
+      {
+        "factor_name": "SWBGT_ESTIMATED",
+        "value": 25.3,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "NOMINAL_ENVIRONMENTAL_LOAD"
+      },
+      {
+        "factor_name": "WORKLOAD_INTENSITY",
+        "value": "HEAVY",
+        "unit": "METABOLIC_RATE",
+        "weight": "MAJOR",
+        "contribution": "SIGNIFICANT_INTERNAL_HEAT"
+      },
+      {
+        "factor_name": "DIRECT_SUN_EXPOSURE",
+        "value": "DIRECT_SUN",
+        "unit": "EXPOSURE_CLASS",
+        "weight": "MODERATE",
+        "contribution": "SOLAR_RADIATION_ADDITION"
+      },
+      {
+        "factor_name": "ACCLIMATIZATION_PROFILE",
+        "value": "ESTABLISHED",
+        "unit": "ROSTER_STATUS",
+        "weight": "MINOR",
+        "contribution": "ESTABLISHED_SEASONAL_ADAPTATION"
+      }
+    ],
+    "explanation": {
+      "what": "Worksite is operating at LOW heat risk.",
+      "why": "Worksite reached LOW operational risk because calculated Heat Index (21.4°C) coincides with HEAVY labor in DIRECT SUN.",
+      "data": "Based on validated telemetry from 2026-10-09T01:00:00.000Z (8m old, quality: VALID).",
+      "rule": "Evaluated against Approved Rule Matrix v1.0.0 (NOAA SR 90-23 / OSHA NEP / IMD HAP / ISO 7243).",
+      "limitations": "Direct physical wet-bulb globe temperature sensor unavailable; sWBGT is an empirical mathematical proxy (BOM formula), not a physical black-globe measurement (ISO 7243). Base thresholds (32°C, 39°C, 46°C) reflect IMD Heat Action Plan & OSHA NEP demonstration baselines; client policy must verify site-specific thresholds.",
+      "next_steps": "Standard operational baseline; verify potable water dispensers are replenished."
+    },
+    "reason_synthesis": "Worksite reached LOW operational risk because calculated Heat Index (21.4°C) coincides with HEAVY labor in DIRECT SUN.",
+    "generated_action_ids": [
+      "act_1791508105007_ws_blr_north_04_act_chilled_water_refill"
+    ]
+  },
+  {
+    "assessment_id": "rsk_test_high_02",
+    "risk_id": "rsk_test_high_02",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "shift_id": "SHIFT-DAY-01",
+    "risk_level": "HIGH",
+    "heat_index_c": 42.5,
+    "swbgt_c": 33.2,
+    "trigger_factors": [
+      "Heat Index (42.5°C) breaches High threshold (39°C - 45.9°C)",
+      "HEAVY labor in DIRECT SUN"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_HIGH",
+      "R02_COMBINED_CONTEXT_HIGH_TO_CRITICAL"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-08T11:45:00Z",
+    "valid_until_utc": "2026-10-08T12:30:00Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-08T11:25:00Z",
+      "observation_age_minutes": 5,
+      "station_id": "STN_BLR_NORTH_01"
+    },
+    "risk_factors": [],
+    "explanation": {
+      "what": "Worksite is operating at HIGH heat risk.",
+      "why": "Heat Index 42.5°C with HEAVY labor in DIRECT SUN.",
+      "data": "Observation 5m old, status VALID.",
+      "rule": "Rule Matrix v1.0.0",
+      "limitations": "sWBGT is proxy.",
+      "next_steps": "Mandate work-rest cycles."
+    },
+    "reason_synthesis": "High risk thermal strain."
+  },
+  {
+    "assessment_id": "rsk_1791508182356_ws_blr_north_04",
+    "risk_id": "rsk_1791508182356_ws_blr_north_04",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "risk_level": "LOW",
+    "heat_index_c": 21.4,
+    "swbgt_c": 25.3,
+    "trigger_factors": [
+      "Heat Index (21.4°C) is below baseline advisory threshold (32°C)"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_LOW"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-09T01:09:42.356Z",
+    "valid_until_utc": "2026-10-09T02:09:42.356Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-09T01:00:00.000Z",
+      "observation_age_minutes": 9,
+      "station_id": "OPEN_METEO_GRID_13.0404215_77.63422"
+    },
+    "risk_factors": [
+      {
+        "factor_name": "DRY_BULB_TEMPERATURE",
+        "value": 21.1,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "BASELINE"
+      },
+      {
+        "factor_name": "RELATIVE_HUMIDITY",
+        "value": 96,
+        "unit": "PERCENT",
+        "weight": "MAJOR",
+        "contribution": "HIGH_EVAPORATIVE_RESISTANCE"
+      },
+      {
+        "factor_name": "HEAT_INDEX",
+        "value": 21.4,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "MINIMAL_STRAIN"
+      },
+      {
+        "factor_name": "SWBGT_ESTIMATED",
+        "value": 25.3,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "NOMINAL_ENVIRONMENTAL_LOAD"
+      },
+      {
+        "factor_name": "WORKLOAD_INTENSITY",
+        "value": "HEAVY",
+        "unit": "METABOLIC_RATE",
+        "weight": "MAJOR",
+        "contribution": "SIGNIFICANT_INTERNAL_HEAT"
+      },
+      {
+        "factor_name": "DIRECT_SUN_EXPOSURE",
+        "value": "DIRECT_SUN",
+        "unit": "EXPOSURE_CLASS",
+        "weight": "MODERATE",
+        "contribution": "SOLAR_RADIATION_ADDITION"
+      },
+      {
+        "factor_name": "ACCLIMATIZATION_PROFILE",
+        "value": "ESTABLISHED",
+        "unit": "ROSTER_STATUS",
+        "weight": "MINOR",
+        "contribution": "ESTABLISHED_SEASONAL_ADAPTATION"
+      }
+    ],
+    "explanation": {
+      "what": "Worksite is operating at LOW heat risk.",
+      "why": "Worksite reached LOW operational risk because calculated Heat Index (21.4°C) coincides with HEAVY labor in DIRECT SUN.",
+      "data": "Based on validated telemetry from 2026-10-09T01:00:00.000Z (9m old, quality: VALID).",
+      "rule": "Evaluated against Approved Rule Matrix v1.0.0 (NOAA SR 90-23 / OSHA NEP / IMD HAP / ISO 7243).",
+      "limitations": "Direct physical wet-bulb globe temperature sensor unavailable; sWBGT is an empirical mathematical proxy (BOM formula), not a physical black-globe measurement (ISO 7243). Base thresholds (32°C, 39°C, 46°C) reflect IMD Heat Action Plan & OSHA NEP demonstration baselines; client policy must verify site-specific thresholds.",
+      "next_steps": "Standard operational baseline; verify potable water dispensers are replenished."
+    },
+    "reason_synthesis": "Worksite reached LOW operational risk because calculated Heat Index (21.4°C) coincides with HEAVY labor in DIRECT SUN.",
+    "generated_action_ids": []
+  },
+  {
+    "assessment_id": "rsk_1791508182765_ws_blr_north_04",
+    "risk_id": "rsk_1791508182765_ws_blr_north_04",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "risk_level": "LOW",
+    "heat_index_c": 21.4,
+    "swbgt_c": 25.3,
+    "trigger_factors": [
+      "Heat Index (21.4°C) is below baseline advisory threshold (32°C)"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_LOW"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-09T01:09:42.765Z",
+    "valid_until_utc": "2026-10-09T02:09:42.765Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-09T01:00:00.000Z",
+      "observation_age_minutes": 9,
+      "station_id": "OPEN_METEO_GRID_13.0404215_77.63422"
+    },
+    "risk_factors": [
+      {
+        "factor_name": "DRY_BULB_TEMPERATURE",
+        "value": 21.1,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "BASELINE"
+      },
+      {
+        "factor_name": "RELATIVE_HUMIDITY",
+        "value": 96,
+        "unit": "PERCENT",
+        "weight": "MAJOR",
+        "contribution": "HIGH_EVAPORATIVE_RESISTANCE"
+      },
+      {
+        "factor_name": "HEAT_INDEX",
+        "value": 21.4,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "MINIMAL_STRAIN"
+      },
+      {
+        "factor_name": "SWBGT_ESTIMATED",
+        "value": 25.3,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "NOMINAL_ENVIRONMENTAL_LOAD"
+      },
+      {
+        "factor_name": "WORKLOAD_INTENSITY",
+        "value": "HEAVY",
+        "unit": "METABOLIC_RATE",
+        "weight": "MAJOR",
+        "contribution": "SIGNIFICANT_INTERNAL_HEAT"
+      },
+      {
+        "factor_name": "DIRECT_SUN_EXPOSURE",
+        "value": "DIRECT_SUN",
+        "unit": "EXPOSURE_CLASS",
+        "weight": "MODERATE",
+        "contribution": "SOLAR_RADIATION_ADDITION"
+      },
+      {
+        "factor_name": "ACCLIMATIZATION_PROFILE",
+        "value": "ESTABLISHED",
+        "unit": "ROSTER_STATUS",
+        "weight": "MINOR",
+        "contribution": "ESTABLISHED_SEASONAL_ADAPTATION"
+      }
+    ],
+    "explanation": {
+      "what": "Worksite is operating at LOW heat risk.",
+      "why": "Worksite reached LOW operational risk because calculated Heat Index (21.4°C) coincides with HEAVY labor in DIRECT SUN.",
+      "data": "Based on validated telemetry from 2026-10-09T01:00:00.000Z (9m old, quality: VALID).",
+      "rule": "Evaluated against Approved Rule Matrix v1.0.0 (NOAA SR 90-23 / OSHA NEP / IMD HAP / ISO 7243).",
+      "limitations": "Direct physical wet-bulb globe temperature sensor unavailable; sWBGT is an empirical mathematical proxy (BOM formula), not a physical black-globe measurement (ISO 7243). Base thresholds (32°C, 39°C, 46°C) reflect IMD Heat Action Plan & OSHA NEP demonstration baselines; client policy must verify site-specific thresholds.",
+      "next_steps": "Standard operational baseline; verify potable water dispensers are replenished."
+    },
+    "reason_synthesis": "Worksite reached LOW operational risk because calculated Heat Index (21.4°C) coincides with HEAVY labor in DIRECT SUN.",
+    "generated_action_ids": [
+      "act_1791508182765_ws_blr_north_04_act_chilled_water_refill"
+    ]
+  },
+  {
+    "assessment_id": "rsk_test_high_02",
+    "risk_id": "rsk_test_high_02",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "shift_id": "SHIFT-DAY-01",
+    "risk_level": "HIGH",
+    "heat_index_c": 42.5,
+    "swbgt_c": 33.2,
+    "trigger_factors": [
+      "Heat Index (42.5°C) breaches High threshold (39°C - 45.9°C)",
+      "HEAVY labor in DIRECT SUN"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_HIGH",
+      "R02_COMBINED_CONTEXT_HIGH_TO_CRITICAL"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-08T11:45:00Z",
+    "valid_until_utc": "2026-10-08T12:30:00Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-08T11:25:00Z",
+      "observation_age_minutes": 5,
+      "station_id": "STN_BLR_NORTH_01"
+    },
+    "risk_factors": [],
+    "explanation": {
+      "what": "Worksite is operating at HIGH heat risk.",
+      "why": "Heat Index 42.5°C with HEAVY labor in DIRECT SUN.",
+      "data": "Observation 5m old, status VALID.",
+      "rule": "Rule Matrix v1.0.0",
+      "limitations": "sWBGT is proxy.",
+      "next_steps": "Mandate work-rest cycles."
+    },
+    "reason_synthesis": "High risk thermal strain."
+  },
+  {
+    "assessment_id": "rsk_test_high_02",
+    "risk_id": "rsk_test_high_02",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "shift_id": "SHIFT-DAY-01",
+    "risk_level": "HIGH",
+    "heat_index_c": 42.5,
+    "swbgt_c": 33.2,
+    "trigger_factors": [
+      "Heat Index (42.5°C) breaches High threshold (39°C - 45.9°C)",
+      "HEAVY labor in DIRECT SUN"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_HIGH",
+      "R02_COMBINED_CONTEXT_HIGH_TO_CRITICAL"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-08T11:45:00Z",
+    "valid_until_utc": "2026-10-08T12:30:00Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-08T11:25:00Z",
+      "observation_age_minutes": 5,
+      "station_id": "STN_BLR_NORTH_01"
+    },
+    "risk_factors": [],
+    "explanation": {
+      "what": "Worksite is operating at HIGH heat risk.",
+      "why": "Heat Index 42.5°C with HEAVY labor in DIRECT SUN.",
+      "data": "Observation 5m old, status VALID.",
+      "rule": "Rule Matrix v1.0.0",
+      "limitations": "sWBGT is proxy.",
+      "next_steps": "Mandate work-rest cycles."
+    },
+    "reason_synthesis": "High risk thermal strain."
+  },
+  {
+    "assessment_id": "rsk_test_high_02",
+    "risk_id": "rsk_test_high_02",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "shift_id": "SHIFT-DAY-01",
+    "risk_level": "HIGH",
+    "heat_index_c": 42.5,
+    "swbgt_c": 33.2,
+    "trigger_factors": [
+      "Heat Index (42.5°C) breaches High threshold (39°C - 45.9°C)",
+      "HEAVY labor in DIRECT SUN"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_HIGH",
+      "R02_COMBINED_CONTEXT_HIGH_TO_CRITICAL"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-08T11:45:00Z",
+    "valid_until_utc": "2026-10-08T12:30:00Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-08T11:25:00Z",
+      "observation_age_minutes": 5,
+      "station_id": "STN_BLR_NORTH_01"
+    },
+    "risk_factors": [],
+    "explanation": {
+      "what": "Worksite is operating at HIGH heat risk.",
+      "why": "Heat Index 42.5°C with HEAVY labor in DIRECT SUN.",
+      "data": "Observation 5m old, status VALID.",
+      "rule": "Rule Matrix v1.0.0",
+      "limitations": "sWBGT is proxy.",
+      "next_steps": "Mandate work-rest cycles."
+    },
+    "reason_synthesis": "High risk thermal strain."
+  },
+  {
+    "assessment_id": "rsk_1791711546959_ws_blr_north_04",
+    "risk_id": "rsk_1791711546959_ws_blr_north_04",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "shift_id": "SHIFT-DAY-01",
+    "risk_level": "LOW",
+    "heat_index_c": 28.9,
+    "swbgt_c": 26.9,
+    "trigger_factors": [
+      "Heat Index (28.9°C) is below baseline advisory threshold (32°C)",
+      "Active shift overlaps peak solar radiation window (11:00 - 15:00)"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_LOW",
+      "R04_SOLAR_PEAK_EXPOSURE"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-11T09:39:06.959Z",
+    "valid_until_utc": "2026-10-11T10:39:06.959Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-11T09:30:00.000Z",
+      "observation_age_minutes": 9,
+      "station_id": "OPEN_METEO_GRID_13.0404215_77.63422"
+    },
+    "risk_factors": [
+      {
+        "factor_name": "DRY_BULB_TEMPERATURE",
+        "value": 29.4,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "BASELINE"
+      },
+      {
+        "factor_name": "RELATIVE_HUMIDITY",
+        "value": 39,
+        "unit": "PERCENT",
+        "weight": "MODERATE",
+        "contribution": "MODERATE_EVAPORATIVE_RESISTANCE"
+      },
+      {
+        "factor_name": "HEAT_INDEX",
+        "value": 28.9,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "MINIMAL_STRAIN"
+      },
+      {
+        "factor_name": "SWBGT_ESTIMATED",
+        "value": 26.9,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "NOMINAL_ENVIRONMENTAL_LOAD"
+      },
+      {
+        "factor_name": "WORKLOAD_INTENSITY",
+        "value": "HEAVY",
+        "unit": "METABOLIC_RATE",
+        "weight": "MAJOR",
+        "contribution": "SIGNIFICANT_INTERNAL_HEAT"
+      },
+      {
+        "factor_name": "DIRECT_SUN_EXPOSURE",
+        "value": "DIRECT_SUN",
+        "unit": "EXPOSURE_CLASS",
+        "weight": "MODERATE",
+        "contribution": "SOLAR_RADIATION_ADDITION"
+      },
+      {
+        "factor_name": "ACCLIMATIZATION_PROFILE",
+        "value": "ESTABLISHED",
+        "unit": "ROSTER_STATUS",
+        "weight": "MINOR",
+        "contribution": "ESTABLISHED_SEASONAL_ADAPTATION"
+      }
+    ],
+    "explanation": {
+      "what": "Worksite is operating at LOW heat risk.",
+      "why": "Worksite reached LOW operational risk because calculated Heat Index (28.9°C) coincides with HEAVY labor in DIRECT SUN.",
+      "data": "Based on validated telemetry from 2026-10-11T09:30:00.000Z (9m old, quality: VALID).",
+      "rule": "Evaluated against Approved Rule Matrix v1.0.0 (NOAA SR 90-23 / OSHA NEP / IMD HAP / ISO 7243).",
+      "limitations": "Direct physical wet-bulb globe temperature sensor unavailable; sWBGT is an empirical mathematical proxy (BOM formula), not a physical black-globe measurement (ISO 7243). Base thresholds (32°C, 39°C, 46°C) reflect IMD Heat Action Plan & OSHA NEP demonstration baselines; client policy must verify site-specific thresholds.",
+      "next_steps": "Standard operational baseline; verify potable water dispensers are replenished."
+    },
+    "reason_synthesis": "Worksite reached LOW operational risk because calculated Heat Index (28.9°C) coincides with HEAVY labor in DIRECT SUN.",
+    "generated_action_ids": []
+  },
+  {
+    "assessment_id": "rsk_1791711547388_ws_blr_north_04",
+    "risk_id": "rsk_1791711547388_ws_blr_north_04",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "shift_id": "SHIFT-DAY-01",
+    "risk_level": "LOW",
+    "heat_index_c": 28.9,
+    "swbgt_c": 26.9,
+    "trigger_factors": [
+      "Heat Index (28.9°C) is below baseline advisory threshold (32°C)",
+      "Active shift overlaps peak solar radiation window (11:00 - 15:00)"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_LOW",
+      "R04_SOLAR_PEAK_EXPOSURE"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-11T09:39:07.388Z",
+    "valid_until_utc": "2026-10-11T10:39:07.388Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-11T09:30:00.000Z",
+      "observation_age_minutes": 9,
+      "station_id": "OPEN_METEO_GRID_13.0404215_77.63422"
+    },
+    "risk_factors": [
+      {
+        "factor_name": "DRY_BULB_TEMPERATURE",
+        "value": 29.4,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "BASELINE"
+      },
+      {
+        "factor_name": "RELATIVE_HUMIDITY",
+        "value": 39,
+        "unit": "PERCENT",
+        "weight": "MODERATE",
+        "contribution": "MODERATE_EVAPORATIVE_RESISTANCE"
+      },
+      {
+        "factor_name": "HEAT_INDEX",
+        "value": 28.9,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "MINIMAL_STRAIN"
+      },
+      {
+        "factor_name": "SWBGT_ESTIMATED",
+        "value": 26.9,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "NOMINAL_ENVIRONMENTAL_LOAD"
+      },
+      {
+        "factor_name": "WORKLOAD_INTENSITY",
+        "value": "HEAVY",
+        "unit": "METABOLIC_RATE",
+        "weight": "MAJOR",
+        "contribution": "SIGNIFICANT_INTERNAL_HEAT"
+      },
+      {
+        "factor_name": "DIRECT_SUN_EXPOSURE",
+        "value": "DIRECT_SUN",
+        "unit": "EXPOSURE_CLASS",
+        "weight": "MODERATE",
+        "contribution": "SOLAR_RADIATION_ADDITION"
+      },
+      {
+        "factor_name": "ACCLIMATIZATION_PROFILE",
+        "value": "ESTABLISHED",
+        "unit": "ROSTER_STATUS",
+        "weight": "MINOR",
+        "contribution": "ESTABLISHED_SEASONAL_ADAPTATION"
+      }
+    ],
+    "explanation": {
+      "what": "Worksite is operating at LOW heat risk.",
+      "why": "Worksite reached LOW operational risk because calculated Heat Index (28.9°C) coincides with HEAVY labor in DIRECT SUN.",
+      "data": "Based on validated telemetry from 2026-10-11T09:30:00.000Z (9m old, quality: VALID).",
+      "rule": "Evaluated against Approved Rule Matrix v1.0.0 (NOAA SR 90-23 / OSHA NEP / IMD HAP / ISO 7243).",
+      "limitations": "Direct physical wet-bulb globe temperature sensor unavailable; sWBGT is an empirical mathematical proxy (BOM formula), not a physical black-globe measurement (ISO 7243). Base thresholds (32°C, 39°C, 46°C) reflect IMD Heat Action Plan & OSHA NEP demonstration baselines; client policy must verify site-specific thresholds.",
+      "next_steps": "Standard operational baseline; verify potable water dispensers are replenished."
+    },
+    "reason_synthesis": "Worksite reached LOW operational risk because calculated Heat Index (28.9°C) coincides with HEAVY labor in DIRECT SUN.",
+    "generated_action_ids": [
+      "act_1791711547388_ws_blr_north_04_act_chilled_water_refill"
+    ]
+  },
+  {
+    "assessment_id": "rsk_test_high_02",
+    "risk_id": "rsk_test_high_02",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "shift_id": "SHIFT-DAY-01",
+    "risk_level": "HIGH",
+    "heat_index_c": 42.5,
+    "swbgt_c": 33.2,
+    "trigger_factors": [
+      "Heat Index (42.5°C) breaches High threshold (39°C - 45.9°C)",
+      "HEAVY labor in DIRECT SUN"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_HIGH",
+      "R02_COMBINED_CONTEXT_HIGH_TO_CRITICAL"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-08T11:45:00Z",
+    "valid_until_utc": "2026-10-08T12:30:00Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-08T11:25:00Z",
+      "observation_age_minutes": 5,
+      "station_id": "STN_BLR_NORTH_01"
+    },
+    "risk_factors": [],
+    "explanation": {
+      "what": "Worksite is operating at HIGH heat risk.",
+      "why": "Heat Index 42.5°C with HEAVY labor in DIRECT SUN.",
+      "data": "Observation 5m old, status VALID.",
+      "rule": "Rule Matrix v1.0.0",
+      "limitations": "sWBGT is proxy.",
+      "next_steps": "Mandate work-rest cycles."
+    },
+    "reason_synthesis": "High risk thermal strain."
+  },
+  {
+    "assessment_id": "rsk_1791713340166_ws_blr_north_04",
+    "risk_id": "rsk_1791713340166_ws_blr_north_04",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "shift_id": "SHIFT-AFT-02",
+    "risk_level": "LOW",
+    "heat_index_c": 28.7,
+    "swbgt_c": 26.8,
+    "trigger_factors": [
+      "Heat Index (28.7°C) is below baseline advisory threshold (32°C)"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_LOW"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-11T10:09:00.166Z",
+    "valid_until_utc": "2026-10-11T11:09:00.166Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-11T10:00:00.000Z",
+      "observation_age_minutes": 9,
+      "station_id": "OPEN_METEO_GRID_13.0404215_77.63422"
+    },
+    "risk_factors": [
+      {
+        "factor_name": "DRY_BULB_TEMPERATURE",
+        "value": 29.1,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "BASELINE"
+      },
+      {
+        "factor_name": "RELATIVE_HUMIDITY",
+        "value": 40,
+        "unit": "PERCENT",
+        "weight": "MODERATE",
+        "contribution": "MODERATE_EVAPORATIVE_RESISTANCE"
+      },
+      {
+        "factor_name": "HEAT_INDEX",
+        "value": 28.7,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "MINIMAL_STRAIN"
+      },
+      {
+        "factor_name": "SWBGT_ESTIMATED",
+        "value": 26.8,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "NOMINAL_ENVIRONMENTAL_LOAD"
+      },
+      {
+        "factor_name": "WORKLOAD_INTENSITY",
+        "value": "HEAVY",
+        "unit": "METABOLIC_RATE",
+        "weight": "MAJOR",
+        "contribution": "SIGNIFICANT_INTERNAL_HEAT"
+      },
+      {
+        "factor_name": "DIRECT_SUN_EXPOSURE",
+        "value": "DIRECT_SUN",
+        "unit": "EXPOSURE_CLASS",
+        "weight": "MODERATE",
+        "contribution": "SOLAR_RADIATION_ADDITION"
+      },
+      {
+        "factor_name": "ACCLIMATIZATION_PROFILE",
+        "value": "ESTABLISHED",
+        "unit": "ROSTER_STATUS",
+        "weight": "MINOR",
+        "contribution": "ESTABLISHED_SEASONAL_ADAPTATION"
+      }
+    ],
+    "explanation": {
+      "what": "Worksite is operating at LOW heat risk.",
+      "why": "Worksite reached LOW operational risk because calculated Heat Index (28.7°C) coincides with HEAVY labor in DIRECT SUN.",
+      "data": "Based on validated telemetry from 2026-10-11T10:00:00.000Z (9m old, quality: VALID).",
+      "rule": "Evaluated against Approved Rule Matrix v1.0.0 (NOAA SR 90-23 / OSHA NEP / IMD HAP / ISO 7243).",
+      "limitations": "Direct physical wet-bulb globe temperature sensor unavailable; sWBGT is an empirical mathematical proxy (BOM formula), not a physical black-globe measurement (ISO 7243). Base thresholds (32°C, 39°C, 46°C) reflect IMD Heat Action Plan & OSHA NEP demonstration baselines; client policy must verify site-specific thresholds.",
+      "next_steps": "Standard operational baseline; verify potable water dispensers are replenished."
+    },
+    "reason_synthesis": "Worksite reached LOW operational risk because calculated Heat Index (28.7°C) coincides with HEAVY labor in DIRECT SUN.",
+    "generated_action_ids": []
+  },
+  {
+    "assessment_id": "rsk_1791713340573_ws_blr_north_04",
+    "risk_id": "rsk_1791713340573_ws_blr_north_04",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "shift_id": "SHIFT-AFT-02",
+    "risk_level": "LOW",
+    "heat_index_c": 28.7,
+    "swbgt_c": 26.8,
+    "trigger_factors": [
+      "Heat Index (28.7°C) is below baseline advisory threshold (32°C)"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_LOW"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-11T10:09:00.573Z",
+    "valid_until_utc": "2026-10-11T11:09:00.573Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-11T10:00:00.000Z",
+      "observation_age_minutes": 9,
+      "station_id": "OPEN_METEO_GRID_13.0404215_77.63422"
+    },
+    "risk_factors": [
+      {
+        "factor_name": "DRY_BULB_TEMPERATURE",
+        "value": 29.1,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "BASELINE"
+      },
+      {
+        "factor_name": "RELATIVE_HUMIDITY",
+        "value": 40,
+        "unit": "PERCENT",
+        "weight": "MODERATE",
+        "contribution": "MODERATE_EVAPORATIVE_RESISTANCE"
+      },
+      {
+        "factor_name": "HEAT_INDEX",
+        "value": 28.7,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "MINIMAL_STRAIN"
+      },
+      {
+        "factor_name": "SWBGT_ESTIMATED",
+        "value": 26.8,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "NOMINAL_ENVIRONMENTAL_LOAD"
+      },
+      {
+        "factor_name": "WORKLOAD_INTENSITY",
+        "value": "MODERATE",
+        "unit": "METABOLIC_RATE",
+        "weight": "MINOR",
+        "contribution": "NOMINAL_METABOLIC_HEAT"
+      },
+      {
+        "factor_name": "DIRECT_SUN_EXPOSURE",
+        "value": "DIRECT_SUN",
+        "unit": "EXPOSURE_CLASS",
+        "weight": "MODERATE",
+        "contribution": "SOLAR_RADIATION_ADDITION"
+      },
+      {
+        "factor_name": "ACCLIMATIZATION_PROFILE",
+        "value": "ESTABLISHED",
+        "unit": "ROSTER_STATUS",
+        "weight": "MINOR",
+        "contribution": "ESTABLISHED_SEASONAL_ADAPTATION"
+      }
+    ],
+    "explanation": {
+      "what": "Worksite is operating at LOW heat risk.",
+      "why": "Worksite reached LOW operational risk because calculated Heat Index (28.7°C) coincides with MODERATE labor in DIRECT SUN.",
+      "data": "Based on validated telemetry from 2026-10-11T10:00:00.000Z (9m old, quality: VALID).",
+      "rule": "Evaluated against Approved Rule Matrix v1.0.0 (NOAA SR 90-23 / OSHA NEP / IMD HAP / ISO 7243).",
+      "limitations": "Direct physical wet-bulb globe temperature sensor unavailable; sWBGT is an empirical mathematical proxy (BOM formula), not a physical black-globe measurement (ISO 7243). Base thresholds (32°C, 39°C, 46°C) reflect IMD Heat Action Plan & OSHA NEP demonstration baselines; client policy must verify site-specific thresholds.",
+      "next_steps": "Standard operational baseline; verify potable water dispensers are replenished."
+    },
+    "reason_synthesis": "Worksite reached LOW operational risk because calculated Heat Index (28.7°C) coincides with MODERATE labor in DIRECT SUN.",
+    "generated_action_ids": [
+      "act_1791713340573_ws_blr_north_04_act_chilled_water_refill"
+    ]
+  },
+  {
+    "assessment_id": "rsk_test_high_02",
+    "risk_id": "rsk_test_high_02",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "shift_id": "SHIFT-DAY-01",
+    "risk_level": "HIGH",
+    "heat_index_c": 42.5,
+    "swbgt_c": 33.2,
+    "trigger_factors": [
+      "Heat Index (42.5°C) breaches High threshold (39°C - 45.9°C)",
+      "HEAVY labor in DIRECT SUN"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_HIGH",
+      "R02_COMBINED_CONTEXT_HIGH_TO_CRITICAL"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-08T11:45:00Z",
+    "valid_until_utc": "2026-10-08T12:30:00Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-08T11:25:00Z",
+      "observation_age_minutes": 5,
+      "station_id": "STN_BLR_NORTH_01"
+    },
+    "risk_factors": [],
+    "explanation": {
+      "what": "Worksite is operating at HIGH heat risk.",
+      "why": "Heat Index 42.5°C with HEAVY labor in DIRECT SUN.",
+      "data": "Observation 5m old, status VALID.",
+      "rule": "Rule Matrix v1.0.0",
+      "limitations": "sWBGT is proxy.",
+      "next_steps": "Mandate work-rest cycles."
+    },
+    "reason_synthesis": "High risk thermal strain."
+  },
+  {
+    "assessment_id": "rsk_1791716817276_ws_blr_north_04",
+    "risk_id": "rsk_1791716817276_ws_blr_north_04",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "shift_id": "SHIFT-AFT-02",
+    "risk_level": "LOW",
+    "heat_index_c": 28.3,
+    "swbgt_c": 26.6,
+    "trigger_factors": [
+      "Heat Index (28.3°C) is below baseline advisory threshold (32°C)"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_LOW"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-11T11:06:57.276Z",
+    "valid_until_utc": "2026-10-11T12:06:57.276Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-11T11:00:00.000Z",
+      "observation_age_minutes": 6,
+      "station_id": "OPEN_METEO_GRID_13.0404215_77.63422"
+    },
+    "risk_factors": [
+      {
+        "factor_name": "DRY_BULB_TEMPERATURE",
+        "value": 28.4,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "BASELINE"
+      },
+      {
+        "factor_name": "RELATIVE_HUMIDITY",
+        "value": 43,
+        "unit": "PERCENT",
+        "weight": "MODERATE",
+        "contribution": "MODERATE_EVAPORATIVE_RESISTANCE"
+      },
+      {
+        "factor_name": "HEAT_INDEX",
+        "value": 28.3,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "MINIMAL_STRAIN"
+      },
+      {
+        "factor_name": "SWBGT_ESTIMATED",
+        "value": 26.6,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "NOMINAL_ENVIRONMENTAL_LOAD"
+      },
+      {
+        "factor_name": "WORKLOAD_INTENSITY",
+        "value": "HEAVY",
+        "unit": "METABOLIC_RATE",
+        "weight": "MAJOR",
+        "contribution": "SIGNIFICANT_INTERNAL_HEAT"
+      },
+      {
+        "factor_name": "DIRECT_SUN_EXPOSURE",
+        "value": "DIRECT_SUN",
+        "unit": "EXPOSURE_CLASS",
+        "weight": "MODERATE",
+        "contribution": "SOLAR_RADIATION_ADDITION"
+      },
+      {
+        "factor_name": "ACCLIMATIZATION_PROFILE",
+        "value": "ESTABLISHED",
+        "unit": "ROSTER_STATUS",
+        "weight": "MINOR",
+        "contribution": "ESTABLISHED_SEASONAL_ADAPTATION"
+      }
+    ],
+    "explanation": {
+      "what": "Worksite is operating at LOW heat risk.",
+      "why": "Worksite reached LOW operational risk because calculated Heat Index (28.3°C) coincides with HEAVY labor in DIRECT SUN.",
+      "data": "Based on validated telemetry from 2026-10-11T11:00:00.000Z (6m old, quality: VALID).",
+      "rule": "Evaluated against Approved Rule Matrix v1.0.0 (NOAA SR 90-23 / OSHA NEP / IMD HAP / ISO 7243).",
+      "limitations": "Direct physical wet-bulb globe temperature sensor unavailable; sWBGT is an empirical mathematical proxy (BOM formula), not a physical black-globe measurement (ISO 7243). Base thresholds (32°C, 39°C, 46°C) reflect IMD Heat Action Plan & OSHA NEP demonstration baselines; client policy must verify site-specific thresholds.",
+      "next_steps": "Standard operational baseline; verify potable water dispensers are replenished."
+    },
+    "reason_synthesis": "Worksite reached LOW operational risk because calculated Heat Index (28.3°C) coincides with HEAVY labor in DIRECT SUN.",
+    "generated_action_ids": []
+  },
+  {
+    "assessment_id": "rsk_1791716817701_ws_blr_north_04",
+    "risk_id": "rsk_1791716817701_ws_blr_north_04",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "shift_id": "SHIFT-AFT-02",
+    "risk_level": "LOW",
+    "heat_index_c": 28.3,
+    "swbgt_c": 26.6,
+    "trigger_factors": [
+      "Heat Index (28.3°C) is below baseline advisory threshold (32°C)"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_LOW"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-11T11:06:57.701Z",
+    "valid_until_utc": "2026-10-11T12:06:57.701Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-11T11:00:00.000Z",
+      "observation_age_minutes": 6,
+      "station_id": "OPEN_METEO_GRID_13.0404215_77.63422"
+    },
+    "risk_factors": [
+      {
+        "factor_name": "DRY_BULB_TEMPERATURE",
+        "value": 28.4,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "BASELINE"
+      },
+      {
+        "factor_name": "RELATIVE_HUMIDITY",
+        "value": 43,
+        "unit": "PERCENT",
+        "weight": "MODERATE",
+        "contribution": "MODERATE_EVAPORATIVE_RESISTANCE"
+      },
+      {
+        "factor_name": "HEAT_INDEX",
+        "value": 28.3,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "MINIMAL_STRAIN"
+      },
+      {
+        "factor_name": "SWBGT_ESTIMATED",
+        "value": 26.6,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "NOMINAL_ENVIRONMENTAL_LOAD"
+      },
+      {
+        "factor_name": "WORKLOAD_INTENSITY",
+        "value": "MODERATE",
+        "unit": "METABOLIC_RATE",
+        "weight": "MINOR",
+        "contribution": "NOMINAL_METABOLIC_HEAT"
+      },
+      {
+        "factor_name": "DIRECT_SUN_EXPOSURE",
+        "value": "DIRECT_SUN",
+        "unit": "EXPOSURE_CLASS",
+        "weight": "MODERATE",
+        "contribution": "SOLAR_RADIATION_ADDITION"
+      },
+      {
+        "factor_name": "ACCLIMATIZATION_PROFILE",
+        "value": "ESTABLISHED",
+        "unit": "ROSTER_STATUS",
+        "weight": "MINOR",
+        "contribution": "ESTABLISHED_SEASONAL_ADAPTATION"
+      }
+    ],
+    "explanation": {
+      "what": "Worksite is operating at LOW heat risk.",
+      "why": "Worksite reached LOW operational risk because calculated Heat Index (28.3°C) coincides with MODERATE labor in DIRECT SUN.",
+      "data": "Based on validated telemetry from 2026-10-11T11:00:00.000Z (6m old, quality: VALID).",
+      "rule": "Evaluated against Approved Rule Matrix v1.0.0 (NOAA SR 90-23 / OSHA NEP / IMD HAP / ISO 7243).",
+      "limitations": "Direct physical wet-bulb globe temperature sensor unavailable; sWBGT is an empirical mathematical proxy (BOM formula), not a physical black-globe measurement (ISO 7243). Base thresholds (32°C, 39°C, 46°C) reflect IMD Heat Action Plan & OSHA NEP demonstration baselines; client policy must verify site-specific thresholds.",
+      "next_steps": "Standard operational baseline; verify potable water dispensers are replenished."
+    },
+    "reason_synthesis": "Worksite reached LOW operational risk because calculated Heat Index (28.3°C) coincides with MODERATE labor in DIRECT SUN.",
+    "generated_action_ids": [
+      "act_1791716817701_ws_blr_north_04_act_chilled_water_refill"
+    ]
+  },
+  {
+    "assessment_id": "rsk_test_high_02",
+    "risk_id": "rsk_test_high_02",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "shift_id": "SHIFT-DAY-01",
+    "risk_level": "HIGH",
+    "heat_index_c": 42.5,
+    "swbgt_c": 33.2,
+    "trigger_factors": [
+      "Heat Index (42.5°C) breaches High threshold (39°C - 45.9°C)",
+      "HEAVY labor in DIRECT SUN"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_HIGH",
+      "R02_COMBINED_CONTEXT_HIGH_TO_CRITICAL"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-08T11:45:00Z",
+    "valid_until_utc": "2026-10-08T12:30:00Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-08T11:25:00Z",
+      "observation_age_minutes": 5,
+      "station_id": "STN_BLR_NORTH_01"
+    },
+    "risk_factors": [],
+    "explanation": {
+      "what": "Worksite is operating at HIGH heat risk.",
+      "why": "Heat Index 42.5°C with HEAVY labor in DIRECT SUN.",
+      "data": "Observation 5m old, status VALID.",
+      "rule": "Rule Matrix v1.0.0",
+      "limitations": "sWBGT is proxy.",
+      "next_steps": "Mandate work-rest cycles."
+    },
+    "reason_synthesis": "High risk thermal strain."
+  },
+  {
+    "assessment_id": "rsk_1791717503100_ws_blr_north_04",
+    "risk_id": "rsk_1791717503100_ws_blr_north_04",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "shift_id": "SHIFT-AFT-02",
+    "risk_level": "LOW",
+    "heat_index_c": 28,
+    "swbgt_c": 26.4,
+    "trigger_factors": [
+      "Heat Index (28°C) is below baseline advisory threshold (32°C)"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_LOW"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-11T11:18:23.100Z",
+    "valid_until_utc": "2026-10-11T12:18:23.100Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-11T11:15:00.000Z",
+      "observation_age_minutes": 3,
+      "station_id": "OPEN_METEO_GRID_13.0404215_77.63422"
+    },
+    "risk_factors": [
+      {
+        "factor_name": "DRY_BULB_TEMPERATURE",
+        "value": 28.1,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "BASELINE"
+      },
+      {
+        "factor_name": "RELATIVE_HUMIDITY",
+        "value": 44,
+        "unit": "PERCENT",
+        "weight": "MODERATE",
+        "contribution": "MODERATE_EVAPORATIVE_RESISTANCE"
+      },
+      {
+        "factor_name": "HEAT_INDEX",
+        "value": 28,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "MINIMAL_STRAIN"
+      },
+      {
+        "factor_name": "SWBGT_ESTIMATED",
+        "value": 26.4,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "NOMINAL_ENVIRONMENTAL_LOAD"
+      },
+      {
+        "factor_name": "WORKLOAD_INTENSITY",
+        "value": "HEAVY",
+        "unit": "METABOLIC_RATE",
+        "weight": "MAJOR",
+        "contribution": "SIGNIFICANT_INTERNAL_HEAT"
+      },
+      {
+        "factor_name": "DIRECT_SUN_EXPOSURE",
+        "value": "DIRECT_SUN",
+        "unit": "EXPOSURE_CLASS",
+        "weight": "MODERATE",
+        "contribution": "SOLAR_RADIATION_ADDITION"
+      },
+      {
+        "factor_name": "ACCLIMATIZATION_PROFILE",
+        "value": "ESTABLISHED",
+        "unit": "ROSTER_STATUS",
+        "weight": "MINOR",
+        "contribution": "ESTABLISHED_SEASONAL_ADAPTATION"
+      }
+    ],
+    "explanation": {
+      "what": "Worksite is operating at LOW heat risk.",
+      "why": "Worksite reached LOW operational risk because calculated Heat Index (28°C) coincides with HEAVY labor in DIRECT SUN.",
+      "data": "Based on validated telemetry from 2026-10-11T11:15:00.000Z (3m old, quality: VALID).",
+      "rule": "Evaluated against Approved Rule Matrix v1.0.0 (NOAA SR 90-23 / OSHA NEP / IMD HAP / ISO 7243).",
+      "limitations": "Direct physical wet-bulb globe temperature sensor unavailable; sWBGT is an empirical mathematical proxy (BOM formula), not a physical black-globe measurement (ISO 7243). Base thresholds (32°C, 39°C, 46°C) reflect IMD Heat Action Plan & OSHA NEP demonstration baselines; client policy must verify site-specific thresholds.",
+      "next_steps": "Standard operational baseline; verify potable water dispensers are replenished."
+    },
+    "reason_synthesis": "Worksite reached LOW operational risk because calculated Heat Index (28°C) coincides with HEAVY labor in DIRECT SUN.",
+    "generated_action_ids": []
+  },
+  {
+    "assessment_id": "rsk_1791717503592_ws_blr_north_04",
+    "risk_id": "rsk_1791717503592_ws_blr_north_04",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "shift_id": "SHIFT-AFT-02",
+    "risk_level": "LOW",
+    "heat_index_c": 28,
+    "swbgt_c": 26.4,
+    "trigger_factors": [
+      "Heat Index (28°C) is below baseline advisory threshold (32°C)"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_LOW"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-11T11:18:23.592Z",
+    "valid_until_utc": "2026-10-11T12:18:23.592Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-11T11:15:00.000Z",
+      "observation_age_minutes": 3,
+      "station_id": "OPEN_METEO_GRID_13.0404215_77.63422"
+    },
+    "risk_factors": [
+      {
+        "factor_name": "DRY_BULB_TEMPERATURE",
+        "value": 28.1,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "BASELINE"
+      },
+      {
+        "factor_name": "RELATIVE_HUMIDITY",
+        "value": 44,
+        "unit": "PERCENT",
+        "weight": "MODERATE",
+        "contribution": "MODERATE_EVAPORATIVE_RESISTANCE"
+      },
+      {
+        "factor_name": "HEAT_INDEX",
+        "value": 28,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "MINIMAL_STRAIN"
+      },
+      {
+        "factor_name": "SWBGT_ESTIMATED",
+        "value": 26.4,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "NOMINAL_ENVIRONMENTAL_LOAD"
+      },
+      {
+        "factor_name": "WORKLOAD_INTENSITY",
+        "value": "MODERATE",
+        "unit": "METABOLIC_RATE",
+        "weight": "MINOR",
+        "contribution": "NOMINAL_METABOLIC_HEAT"
+      },
+      {
+        "factor_name": "DIRECT_SUN_EXPOSURE",
+        "value": "DIRECT_SUN",
+        "unit": "EXPOSURE_CLASS",
+        "weight": "MODERATE",
+        "contribution": "SOLAR_RADIATION_ADDITION"
+      },
+      {
+        "factor_name": "ACCLIMATIZATION_PROFILE",
+        "value": "ESTABLISHED",
+        "unit": "ROSTER_STATUS",
+        "weight": "MINOR",
+        "contribution": "ESTABLISHED_SEASONAL_ADAPTATION"
+      }
+    ],
+    "explanation": {
+      "what": "Worksite is operating at LOW heat risk.",
+      "why": "Worksite reached LOW operational risk because calculated Heat Index (28°C) coincides with MODERATE labor in DIRECT SUN.",
+      "data": "Based on validated telemetry from 2026-10-11T11:15:00.000Z (3m old, quality: VALID).",
+      "rule": "Evaluated against Approved Rule Matrix v1.0.0 (NOAA SR 90-23 / OSHA NEP / IMD HAP / ISO 7243).",
+      "limitations": "Direct physical wet-bulb globe temperature sensor unavailable; sWBGT is an empirical mathematical proxy (BOM formula), not a physical black-globe measurement (ISO 7243). Base thresholds (32°C, 39°C, 46°C) reflect IMD Heat Action Plan & OSHA NEP demonstration baselines; client policy must verify site-specific thresholds.",
+      "next_steps": "Standard operational baseline; verify potable water dispensers are replenished."
+    },
+    "reason_synthesis": "Worksite reached LOW operational risk because calculated Heat Index (28°C) coincides with MODERATE labor in DIRECT SUN.",
+    "generated_action_ids": [
+      "act_1791717503592_ws_blr_north_04_act_chilled_water_refill"
+    ]
+  },
+  {
+    "assessment_id": "rsk_test_high_02",
+    "risk_id": "rsk_test_high_02",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "shift_id": "SHIFT-DAY-01",
+    "risk_level": "HIGH",
+    "heat_index_c": 42.5,
+    "swbgt_c": 33.2,
+    "trigger_factors": [
+      "Heat Index (42.5°C) breaches High threshold (39°C - 45.9°C)",
+      "HEAVY labor in DIRECT SUN"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_HIGH",
+      "R02_COMBINED_CONTEXT_HIGH_TO_CRITICAL"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-08T11:45:00Z",
+    "valid_until_utc": "2026-10-08T12:30:00Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-08T11:25:00Z",
+      "observation_age_minutes": 5,
+      "station_id": "STN_BLR_NORTH_01"
+    },
+    "risk_factors": [],
+    "explanation": {
+      "what": "Worksite is operating at HIGH heat risk.",
+      "why": "Heat Index 42.5°C with HEAVY labor in DIRECT SUN.",
+      "data": "Observation 5m old, status VALID.",
+      "rule": "Rule Matrix v1.0.0",
+      "limitations": "sWBGT is proxy.",
+      "next_steps": "Mandate work-rest cycles."
+    },
+    "reason_synthesis": "High risk thermal strain."
+  },
+  {
+    "assessment_id": "rsk_1791717672850_ws_blr_north_04",
+    "risk_id": "rsk_1791717672850_ws_blr_north_04",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "shift_id": "SHIFT-AFT-02",
+    "risk_level": "LOW",
+    "heat_index_c": 28,
+    "swbgt_c": 26.4,
+    "trigger_factors": [
+      "Heat Index (28°C) is below baseline advisory threshold (32°C)"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_LOW"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-11T11:21:12.850Z",
+    "valid_until_utc": "2026-10-11T12:21:12.850Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-11T11:15:00.000Z",
+      "observation_age_minutes": 6,
+      "station_id": "OPEN_METEO_GRID_13.0404215_77.63422"
+    },
+    "risk_factors": [
+      {
+        "factor_name": "DRY_BULB_TEMPERATURE",
+        "value": 28.1,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "BASELINE"
+      },
+      {
+        "factor_name": "RELATIVE_HUMIDITY",
+        "value": 44,
+        "unit": "PERCENT",
+        "weight": "MODERATE",
+        "contribution": "MODERATE_EVAPORATIVE_RESISTANCE"
+      },
+      {
+        "factor_name": "HEAT_INDEX",
+        "value": 28,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "MINIMAL_STRAIN"
+      },
+      {
+        "factor_name": "SWBGT_ESTIMATED",
+        "value": 26.4,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "NOMINAL_ENVIRONMENTAL_LOAD"
+      },
+      {
+        "factor_name": "WORKLOAD_INTENSITY",
+        "value": "HEAVY",
+        "unit": "METABOLIC_RATE",
+        "weight": "MAJOR",
+        "contribution": "SIGNIFICANT_INTERNAL_HEAT"
+      },
+      {
+        "factor_name": "DIRECT_SUN_EXPOSURE",
+        "value": "DIRECT_SUN",
+        "unit": "EXPOSURE_CLASS",
+        "weight": "MODERATE",
+        "contribution": "SOLAR_RADIATION_ADDITION"
+      },
+      {
+        "factor_name": "ACCLIMATIZATION_PROFILE",
+        "value": "ESTABLISHED",
+        "unit": "ROSTER_STATUS",
+        "weight": "MINOR",
+        "contribution": "ESTABLISHED_SEASONAL_ADAPTATION"
+      }
+    ],
+    "explanation": {
+      "what": "Worksite is operating at LOW heat risk.",
+      "why": "Worksite reached LOW operational risk because calculated Heat Index (28°C) coincides with HEAVY labor in DIRECT SUN.",
+      "data": "Based on validated telemetry from 2026-10-11T11:15:00.000Z (6m old, quality: VALID).",
+      "rule": "Evaluated against Approved Rule Matrix v1.0.0 (NOAA SR 90-23 / OSHA NEP / IMD HAP / ISO 7243).",
+      "limitations": "Direct physical wet-bulb globe temperature sensor unavailable; sWBGT is an empirical mathematical proxy (BOM formula), not a physical black-globe measurement (ISO 7243). Base thresholds (32°C, 39°C, 46°C) reflect IMD Heat Action Plan & OSHA NEP demonstration baselines; client policy must verify site-specific thresholds.",
+      "next_steps": "Standard operational baseline; verify potable water dispensers are replenished."
+    },
+    "reason_synthesis": "Worksite reached LOW operational risk because calculated Heat Index (28°C) coincides with HEAVY labor in DIRECT SUN.",
+    "generated_action_ids": []
+  },
+  {
+    "assessment_id": "rsk_1791717673292_ws_blr_north_04",
+    "risk_id": "rsk_1791717673292_ws_blr_north_04",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "shift_id": "SHIFT-AFT-02",
+    "risk_level": "LOW",
+    "heat_index_c": 28,
+    "swbgt_c": 26.4,
+    "trigger_factors": [
+      "Heat Index (28°C) is below baseline advisory threshold (32°C)"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_LOW"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-11T11:21:13.292Z",
+    "valid_until_utc": "2026-10-11T12:21:13.292Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-11T11:15:00.000Z",
+      "observation_age_minutes": 6,
+      "station_id": "OPEN_METEO_GRID_13.0404215_77.63422"
+    },
+    "risk_factors": [
+      {
+        "factor_name": "DRY_BULB_TEMPERATURE",
+        "value": 28.1,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "BASELINE"
+      },
+      {
+        "factor_name": "RELATIVE_HUMIDITY",
+        "value": 44,
+        "unit": "PERCENT",
+        "weight": "MODERATE",
+        "contribution": "MODERATE_EVAPORATIVE_RESISTANCE"
+      },
+      {
+        "factor_name": "HEAT_INDEX",
+        "value": 28,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "MINIMAL_STRAIN"
+      },
+      {
+        "factor_name": "SWBGT_ESTIMATED",
+        "value": 26.4,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "NOMINAL_ENVIRONMENTAL_LOAD"
+      },
+      {
+        "factor_name": "WORKLOAD_INTENSITY",
+        "value": "MODERATE",
+        "unit": "METABOLIC_RATE",
+        "weight": "MINOR",
+        "contribution": "NOMINAL_METABOLIC_HEAT"
+      },
+      {
+        "factor_name": "DIRECT_SUN_EXPOSURE",
+        "value": "DIRECT_SUN",
+        "unit": "EXPOSURE_CLASS",
+        "weight": "MODERATE",
+        "contribution": "SOLAR_RADIATION_ADDITION"
+      },
+      {
+        "factor_name": "ACCLIMATIZATION_PROFILE",
+        "value": "ESTABLISHED",
+        "unit": "ROSTER_STATUS",
+        "weight": "MINOR",
+        "contribution": "ESTABLISHED_SEASONAL_ADAPTATION"
+      }
+    ],
+    "explanation": {
+      "what": "Worksite is operating at LOW heat risk.",
+      "why": "Worksite reached LOW operational risk because calculated Heat Index (28°C) coincides with MODERATE labor in DIRECT SUN.",
+      "data": "Based on validated telemetry from 2026-10-11T11:15:00.000Z (6m old, quality: VALID).",
+      "rule": "Evaluated against Approved Rule Matrix v1.0.0 (NOAA SR 90-23 / OSHA NEP / IMD HAP / ISO 7243).",
+      "limitations": "Direct physical wet-bulb globe temperature sensor unavailable; sWBGT is an empirical mathematical proxy (BOM formula), not a physical black-globe measurement (ISO 7243). Base thresholds (32°C, 39°C, 46°C) reflect IMD Heat Action Plan & OSHA NEP demonstration baselines; client policy must verify site-specific thresholds.",
+      "next_steps": "Standard operational baseline; verify potable water dispensers are replenished."
+    },
+    "reason_synthesis": "Worksite reached LOW operational risk because calculated Heat Index (28°C) coincides with MODERATE labor in DIRECT SUN.",
+    "generated_action_ids": [
+      "act_1791717673292_ws_blr_north_04_act_chilled_water_refill"
+    ]
+  },
+  {
+    "assessment_id": "rsk_test_high_02",
+    "risk_id": "rsk_test_high_02",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "shift_id": "SHIFT-DAY-01",
+    "risk_level": "HIGH",
+    "heat_index_c": 42.5,
+    "swbgt_c": 33.2,
+    "trigger_factors": [
+      "Heat Index (42.5°C) breaches High threshold (39°C - 45.9°C)",
+      "HEAVY labor in DIRECT SUN"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_HIGH",
+      "R02_COMBINED_CONTEXT_HIGH_TO_CRITICAL"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-08T11:45:00Z",
+    "valid_until_utc": "2026-10-08T12:30:00Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-08T11:25:00Z",
+      "observation_age_minutes": 5,
+      "station_id": "STN_BLR_NORTH_01"
+    },
+    "risk_factors": [],
+    "explanation": {
+      "what": "Worksite is operating at HIGH heat risk.",
+      "why": "Heat Index 42.5°C with HEAVY labor in DIRECT SUN.",
+      "data": "Observation 5m old, status VALID.",
+      "rule": "Rule Matrix v1.0.0",
+      "limitations": "sWBGT is proxy.",
+      "next_steps": "Mandate work-rest cycles."
+    },
+    "reason_synthesis": "High risk thermal strain."
+  },
+  {
+    "assessment_id": "rsk_1791720190956_ws_blr_north_04",
+    "risk_id": "rsk_1791720190956_ws_blr_north_04",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "shift_id": "SHIFT-AFT-02",
+    "risk_level": "LOW",
+    "heat_index_c": 27.4,
+    "swbgt_c": 26,
+    "trigger_factors": [
+      "Heat Index (27.4°C) is below baseline advisory threshold (32°C)"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_LOW"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-11T12:03:10.956Z",
+    "valid_until_utc": "2026-10-11T13:03:10.956Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-11T12:00Z",
+      "observation_age_minutes": 3,
+      "station_id": "OPEN_METEO_GRID_13.0404215_77.63422"
+    },
+    "risk_factors": [
+      {
+        "factor_name": "DRY_BULB_TEMPERATURE",
+        "value": 27.1,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "BASELINE"
+      },
+      {
+        "factor_name": "RELATIVE_HUMIDITY",
+        "value": 48,
+        "unit": "PERCENT",
+        "weight": "MODERATE",
+        "contribution": "MODERATE_EVAPORATIVE_RESISTANCE"
+      },
+      {
+        "factor_name": "HEAT_INDEX",
+        "value": 27.4,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "MINIMAL_STRAIN"
+      },
+      {
+        "factor_name": "SWBGT_ESTIMATED",
+        "value": 26,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "NOMINAL_ENVIRONMENTAL_LOAD"
+      },
+      {
+        "factor_name": "WORKLOAD_INTENSITY",
+        "value": "HEAVY",
+        "unit": "METABOLIC_RATE",
+        "weight": "MAJOR",
+        "contribution": "SIGNIFICANT_INTERNAL_HEAT"
+      },
+      {
+        "factor_name": "DIRECT_SUN_EXPOSURE",
+        "value": "DIRECT_SUN",
+        "unit": "EXPOSURE_CLASS",
+        "weight": "MODERATE",
+        "contribution": "SOLAR_RADIATION_ADDITION"
+      },
+      {
+        "factor_name": "ACCLIMATIZATION_PROFILE",
+        "value": "ESTABLISHED",
+        "unit": "ROSTER_STATUS",
+        "weight": "MINOR",
+        "contribution": "ESTABLISHED_SEASONAL_ADAPTATION"
+      }
+    ],
+    "explanation": {
+      "what": "Worksite is operating at LOW heat risk.",
+      "why": "Worksite reached LOW operational risk because calculated Heat Index (27.4°C) coincides with HEAVY labor in DIRECT SUN.",
+      "data": "Based on validated telemetry from 2026-10-11T12:00Z (3m old, quality: VALID).",
+      "rule": "Evaluated against Approved Rule Matrix v1.0.0 (NOAA SR 90-23 / OSHA NEP / IMD HAP / ISO 7243).",
+      "limitations": "Direct physical wet-bulb globe temperature sensor unavailable; sWBGT is an empirical mathematical proxy (BOM formula), not a physical black-globe measurement (ISO 7243). Base thresholds (32°C, 39°C, 46°C) reflect IMD Heat Action Plan & OSHA NEP demonstration baselines; client policy must verify site-specific thresholds.",
+      "next_steps": "Standard operational baseline; verify potable water dispensers are replenished."
+    },
+    "reason_synthesis": "Worksite reached LOW operational risk because calculated Heat Index (27.4°C) coincides with HEAVY labor in DIRECT SUN.",
+    "generated_action_ids": []
+  },
+  {
+    "assessment_id": "rsk_1791720192187_ws_blr_north_04",
+    "risk_id": "rsk_1791720192187_ws_blr_north_04",
+    "worksite_id": "WS-BLR-NORTH-04",
+    "organization_id": "org_infra_corp",
+    "shift_id": "SHIFT-AFT-02",
+    "risk_level": "LOW",
+    "heat_index_c": 27.4,
+    "swbgt_c": 26,
+    "trigger_factors": [
+      "Heat Index (27.4°C) is below baseline advisory threshold (32°C)"
+    ],
+    "triggered_rule_ids": [
+      "R01_ENV_LOW"
+    ],
+    "rule_version": "1.0.0",
+    "evaluated_at_utc": "2026-10-11T12:03:12.187Z",
+    "valid_until_utc": "2026-10-11T13:03:12.187Z",
+    "data_health": "VALID",
+    "is_simulation": false,
+    "source_context": {
+      "weather_source": "OPEN_METEO",
+      "source_type": "CURRENT_OBSERVATION",
+      "observation_timestamp": "2026-10-11T12:00Z",
+      "observation_age_minutes": 3,
+      "station_id": "OPEN_METEO_GRID_13.0404215_77.63422"
+    },
+    "risk_factors": [
+      {
+        "factor_name": "DRY_BULB_TEMPERATURE",
+        "value": 27.1,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "BASELINE"
+      },
+      {
+        "factor_name": "RELATIVE_HUMIDITY",
+        "value": 48,
+        "unit": "PERCENT",
+        "weight": "MODERATE",
+        "contribution": "MODERATE_EVAPORATIVE_RESISTANCE"
+      },
+      {
+        "factor_name": "HEAT_INDEX",
+        "value": 27.4,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "MINIMAL_STRAIN"
+      },
+      {
+        "factor_name": "SWBGT_ESTIMATED",
+        "value": 26,
+        "unit": "CELSIUS",
+        "weight": "MODERATE",
+        "contribution": "NOMINAL_ENVIRONMENTAL_LOAD"
+      },
+      {
+        "factor_name": "WORKLOAD_INTENSITY",
+        "value": "MODERATE",
+        "unit": "METABOLIC_RATE",
+        "weight": "MINOR",
+        "contribution": "NOMINAL_METABOLIC_HEAT"
+      },
+      {
+        "factor_name": "DIRECT_SUN_EXPOSURE",
+        "value": "DIRECT_SUN",
+        "unit": "EXPOSURE_CLASS",
+        "weight": "MODERATE",
+        "contribution": "SOLAR_RADIATION_ADDITION"
+      },
+      {
+        "factor_name": "ACCLIMATIZATION_PROFILE",
+        "value": "ESTABLISHED",
+        "unit": "ROSTER_STATUS",
+        "weight": "MINOR",
+        "contribution": "ESTABLISHED_SEASONAL_ADAPTATION"
+      }
+    ],
+    "explanation": {
+      "what": "Worksite is operating at LOW heat risk.",
+      "why": "Worksite reached LOW operational risk because calculated Heat Index (27.4°C) coincides with MODERATE labor in DIRECT SUN.",
+      "data": "Based on validated telemetry from 2026-10-11T12:00Z (3m old, quality: VALID).",
+      "rule": "Evaluated against Approved Rule Matrix v1.0.0 (NOAA SR 90-23 / OSHA NEP / IMD HAP / ISO 7243).",
+      "limitations": "Direct physical wet-bulb globe temperature sensor unavailable; sWBGT is an empirical mathematical proxy (BOM formula), not a physical black-globe measurement (ISO 7243). Base thresholds (32°C, 39°C, 46°C) reflect IMD Heat Action Plan & OSHA NEP demonstration baselines; client policy must verify site-specific thresholds.",
+      "next_steps": "Standard operational baseline; verify potable water dispensers are replenished."
+    },
+    "reason_synthesis": "Worksite reached LOW operational risk because calculated Heat Index (27.4°C) coincides with MODERATE labor in DIRECT SUN.",
+    "generated_action_ids": []
+  }
+]
